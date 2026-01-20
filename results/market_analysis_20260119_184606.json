@@ -1,0 +1,1647 @@
+{
+  "metadata": {
+    "analysis_date": "2026-01-19T18:46:06.054021",
+    "symbols_analyzed": 50,
+    "lookback_days": 365
+  },
+  "market_overview": {
+    "sentiment": "NEUTRAL",
+    "bullish_pct": 60.0
+  },
+  "trends": [
+    {
+      "symbol": "AAPL",
+      "trend_direction": "DOWN",
+      "trend_value": -1,
+      "trend_strength": 0.5705107227400427,
+      "trend_confidence": 0.5864015459887078
+    },
+    {
+      "symbol": "MSFT",
+      "trend_direction": "NEUTRAL",
+      "trend_value": 0,
+      "trend_strength": 0.15784952209149639,
+      "trend_confidence": 0.8134383235495586
+    },
+    {
+      "symbol": "GOOGL",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.699653256616931,
+      "trend_confidence": 0.797098635066178
+    },
+    {
+      "symbol": "AMZN",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.4211049513246772,
+      "trend_confidence": 0.5330883435256866
+    },
+    {
+      "symbol": "NVDA",
+      "trend_direction": "NEUTRAL",
+      "trend_value": 0,
+      "trend_strength": 0.377501370647948,
+      "trend_confidence": 0.3740172742523429
+    },
+    {
+      "symbol": "META",
+      "trend_direction": "DOWN",
+      "trend_value": -1,
+      "trend_strength": 0.4163754286095852,
+      "trend_confidence": 0.6022468050337317
+    },
+    {
+      "symbol": "TSLA",
+      "trend_direction": "NEUTRAL",
+      "trend_value": 0,
+      "trend_strength": 0.5954729081757026,
+      "trend_confidence": 0.5529820039354059
+    },
+    {
+      "symbol": "AMD",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.4172123446033082,
+      "trend_confidence": 0.6103196784783966
+    },
+    {
+      "symbol": "CRM",
+      "trend_direction": "NEUTRAL",
+      "trend_value": 0,
+      "trend_strength": 0.4873400565495453,
+      "trend_confidence": 0.7531375467861465
+    },
+    {
+      "symbol": "ADBE",
+      "trend_direction": "STRONG_DOWN",
+      "trend_value": -2,
+      "trend_strength": 0.5896929449208027,
+      "trend_confidence": 0.6904552794462306
+    },
+    {
+      "symbol": "JPM",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.5866256970343793,
+      "trend_confidence": 0.4789656322765721
+    },
+    {
+      "symbol": "BAC",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.5390346789758571,
+      "trend_confidence": 0.6355409923884758
+    },
+    {
+      "symbol": "GS",
+      "trend_direction": "STRONG_UP",
+      "trend_value": 2,
+      "trend_strength": 0.6949505655421471,
+      "trend_confidence": 0.8329151649020161
+    },
+    {
+      "symbol": "MS",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.6319297493963516,
+      "trend_confidence": 0.7784554381815543
+    },
+    {
+      "symbol": "V",
+      "trend_direction": "NEUTRAL",
+      "trend_value": 0,
+      "trend_strength": 0.3362006983208481,
+      "trend_confidence": 0.6735813705430256
+    },
+    {
+      "symbol": "MA",
+      "trend_direction": "NEUTRAL",
+      "trend_value": 0,
+      "trend_strength": 0.28817086233279876,
+      "trend_confidence": 0.6220353800378107
+    },
+    {
+      "symbol": "AXP",
+      "trend_direction": "NEUTRAL",
+      "trend_value": 0,
+      "trend_strength": 0.43167361828671286,
+      "trend_confidence": 0.4770349924067237
+    },
+    {
+      "symbol": "BLK",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.2887673764664078,
+      "trend_confidence": 0.7441039563487788
+    },
+    {
+      "symbol": "C",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.5331556089032626,
+      "trend_confidence": 0.5867677303601437
+    },
+    {
+      "symbol": "WFC",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.6411720195105278,
+      "trend_confidence": 0.6194756924584148
+    },
+    {
+      "symbol": "UNH",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.36991662298159944,
+      "trend_confidence": 0.38543719486252304
+    },
+    {
+      "symbol": "JNJ",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.45039964267990545,
+      "trend_confidence": 0.7875560020500392
+    },
+    {
+      "symbol": "PFE",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.38977127990314475,
+      "trend_confidence": 0.6356366361149448
+    },
+    {
+      "symbol": "ABBV",
+      "trend_direction": "NEUTRAL",
+      "trend_value": 0,
+      "trend_strength": 0.3870083779785001,
+      "trend_confidence": 0.33178778634891726
+    },
+    {
+      "symbol": "MRK",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.6783139742247506,
+      "trend_confidence": 0.7654734735107971
+    },
+    {
+      "symbol": "LLY",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.5098286997347886,
+      "trend_confidence": 0.5338723223849695
+    },
+    {
+      "symbol": "TMO",
+      "trend_direction": "STRONG_UP",
+      "trend_value": 2,
+      "trend_strength": 0.576311450776297,
+      "trend_confidence": 0.7404302773434663
+    },
+    {
+      "symbol": "ABT",
+      "trend_direction": "DOWN",
+      "trend_value": -1,
+      "trend_strength": 0.25156821151774766,
+      "trend_confidence": 0.4844759357182979
+    },
+    {
+      "symbol": "BMY",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.6343305199291769,
+      "trend_confidence": 0.723802559571423
+    },
+    {
+      "symbol": "AMGN",
+      "trend_direction": "NEUTRAL",
+      "trend_value": 0,
+      "trend_strength": 0.3481597667122998,
+      "trend_confidence": 0.3946434193224405
+    },
+    {
+      "symbol": "WMT",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.5315872829016621,
+      "trend_confidence": 0.6967381595594858
+    },
+    {
+      "symbol": "HD",
+      "trend_direction": "NEUTRAL",
+      "trend_value": 0,
+      "trend_strength": 0.38320573907058963,
+      "trend_confidence": 0.5579841548731646
+    },
+    {
+      "symbol": "PG",
+      "trend_direction": "DOWN",
+      "trend_value": -1,
+      "trend_strength": 0.3521076962025457,
+      "trend_confidence": 0.5456989688928742
+    },
+    {
+      "symbol": "KO",
+      "trend_direction": "NEUTRAL",
+      "trend_value": 0,
+      "trend_strength": 0.16697513859533183,
+      "trend_confidence": 0.2683078383780954
+    },
+    {
+      "symbol": "PEP",
+      "trend_direction": "NEUTRAL",
+      "trend_value": 0,
+      "trend_strength": 0.2531296887439779,
+      "trend_confidence": 0.457871046883154
+    },
+    {
+      "symbol": "COST",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.5350174820322403,
+      "trend_confidence": 0.7380531001729713
+    },
+    {
+      "symbol": "NKE",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.33922280795447823,
+      "trend_confidence": 0.3672367844723249
+    },
+    {
+      "symbol": "MCD",
+      "trend_direction": "NEUTRAL",
+      "trend_value": 0,
+      "trend_strength": 0.12132920420968404,
+      "trend_confidence": 0.38630358889574484
+    },
+    {
+      "symbol": "SBUX",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.2882458475455252,
+      "trend_confidence": 0.7149382874598782
+    },
+    {
+      "symbol": "TGT",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.4476551046865027,
+      "trend_confidence": 0.9215893126312114
+    },
+    {
+      "symbol": "XOM",
+      "trend_direction": "STRONG_UP",
+      "trend_value": 2,
+      "trend_strength": 0.6307693922268371,
+      "trend_confidence": 0.9216678889071299
+    },
+    {
+      "symbol": "CVX",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.47715599097430184,
+      "trend_confidence": 0.7291536546978516
+    },
+    {
+      "symbol": "CAT",
+      "trend_direction": "STRONG_UP",
+      "trend_value": 2,
+      "trend_strength": 0.7103955459352633,
+      "trend_confidence": 0.8861244379745834
+    },
+    {
+      "symbol": "BA",
+      "trend_direction": "NEUTRAL",
+      "trend_value": 0,
+      "trend_strength": 0.45270553201693653,
+      "trend_confidence": 0.9671522582356638
+    },
+    {
+      "symbol": "UNP",
+      "trend_direction": "NEUTRAL",
+      "trend_value": 0,
+      "trend_strength": 0.24182534872500905,
+      "trend_confidence": 0.6548610728272873
+    },
+    {
+      "symbol": "HON",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.2798104982052453,
+      "trend_confidence": 0.9090707918655496
+    },
+    {
+      "symbol": "GE",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.403865060956896,
+      "trend_confidence": 0.6500070137415425
+    },
+    {
+      "symbol": "MMM",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.40221378558780835,
+      "trend_confidence": 0.5709953121522332
+    },
+    {
+      "symbol": "UPS",
+      "trend_direction": "STRONG_UP",
+      "trend_value": 2,
+      "trend_strength": 0.6460290621878848,
+      "trend_confidence": 0.810764597566729
+    },
+    {
+      "symbol": "LMT",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.4970110399118116,
+      "trend_confidence": 0.8746462542374576
+    }
+  ],
+  "momentum": [
+    {
+      "symbol": "AAPL",
+      "momentum_score": -0.23771628175940923,
+      "rsi": 15.809678287884523
+    },
+    {
+      "symbol": "MSFT",
+      "momentum_score": -0.4211452027988649,
+      "rsi": 28.365168366196627
+    },
+    {
+      "symbol": "GOOGL",
+      "momentum_score": 0.6771149351558489,
+      "rsi": 62.74689302914721
+    },
+    {
+      "symbol": "AMZN",
+      "momentum_score": 0.25043003891931875,
+      "rsi": 52.50219002760299
+    },
+    {
+      "symbol": "NVDA",
+      "momentum_score": -0.0620332519753892,
+      "rsi": 52.06359685652387
+    },
+    {
+      "symbol": "META",
+      "momentum_score": -0.4511270857828661,
+      "rsi": 29.46122826634908
+    },
+    {
+      "symbol": "TSLA",
+      "momentum_score": -0.01645764485938131,
+      "rsi": 39.215928592882236
+    },
+    {
+      "symbol": "AMD",
+      "momentum_score": 0.7373774194383922,
+      "rsi": 72.92910536580663
+    },
+    {
+      "symbol": "CRM",
+      "momentum_score": -0.522008320338937,
+      "rsi": 15.76420997252444
+    },
+    {
+      "symbol": "ADBE",
+      "momentum_score": -0.5909182923591214,
+      "rsi": 11.001048688204577
+    },
+    {
+      "symbol": "JPM",
+      "momentum_score": -0.22704868354076718,
+      "rsi": 38.40611477407552
+    },
+    {
+      "symbol": "BAC",
+      "momentum_score": -0.21279095758420785,
+      "rsi": 31.736646119132942
+    },
+    {
+      "symbol": "GS",
+      "momentum_score": 0.5912753355428404,
+      "rsi": 63.74942088703753
+    },
+    {
+      "symbol": "MS",
+      "momentum_score": 0.46593452232438326,
+      "rsi": 62.0362940427283
+    },
+    {
+      "symbol": "V",
+      "momentum_score": -0.4099313494327581,
+      "rsi": 24.174490122219424
+    },
+    {
+      "symbol": "MA",
+      "momentum_score": -0.3875822578813193,
+      "rsi": 22.71863874627411
+    },
+    {
+      "symbol": "AXP",
+      "momentum_score": -0.07590065493642117,
+      "rsi": 44.093882412926085
+    },
+    {
+      "symbol": "BLK",
+      "momentum_score": 0.4292922862764097,
+      "rsi": 78.98925547810283
+    },
+    {
+      "symbol": "C",
+      "momentum_score": 0.052476050866335285,
+      "rsi": 51.53048601075721
+    },
+    {
+      "symbol": "WFC",
+      "momentum_score": -0.2889446416555464,
+      "rsi": 23.626905887583817
+    },
+    {
+      "symbol": "UNH",
+      "momentum_score": -0.14836070635916454,
+      "rsi": 40.70045054407499
+    },
+    {
+      "symbol": "JNJ",
+      "momentum_score": 0.6428712098507406,
+      "rsi": 74.96589057493823
+    },
+    {
+      "symbol": "PFE",
+      "momentum_score": 0.3426471092666497,
+      "rsi": 58.68486973434516
+    },
+    {
+      "symbol": "ABBV",
+      "momentum_score": -0.20333935266287287,
+      "rsi": 33.53245275222292
+    },
+    {
+      "symbol": "MRK",
+      "momentum_score": 0.1406398236236632,
+      "rsi": 53.55205531622898
+    },
+    {
+      "symbol": "LLY",
+      "momentum_score": 0.0009900925567602882,
+      "rsi": 38.427515641461845
+    },
+    {
+      "symbol": "TMO",
+      "momentum_score": 0.6976937635974383,
+      "rsi": 60.920056014389324
+    },
+    {
+      "symbol": "ABT",
+      "momentum_score": -0.36517634651459313,
+      "rsi": 29.955952855069057
+    },
+    {
+      "symbol": "BMY",
+      "momentum_score": 0.010511744805411926,
+      "rsi": 50.9857039062458
+    },
+    {
+      "symbol": "AMGN",
+      "momentum_score": 0.010624114318405563,
+      "rsi": 53.654187634803854
+    },
+    {
+      "symbol": "WMT",
+      "momentum_score": 0.550939958173873,
+      "rsi": 72.30920521259381
+    },
+    {
+      "symbol": "HD",
+      "momentum_score": 0.4220828411944996,
+      "rsi": 78.32092832690097
+    },
+    {
+      "symbol": "PG",
+      "momentum_score": 0.21878414050956474,
+      "rsi": 56.65955304870811
+    },
+    {
+      "symbol": "KO",
+      "momentum_score": 0.2730476051937583,
+      "rsi": 54.60844259618555
+    },
+    {
+      "symbol": "PEP",
+      "momentum_score": 0.36936983971860593,
+      "rsi": 66.68033886461563
+    },
+    {
+      "symbol": "COST",
+      "momentum_score": 0.4311948495806943,
+      "rsi": 85.71055302415495
+    },
+    {
+      "symbol": "NKE",
+      "momentum_score": 0.09544645205844914,
+      "rsi": 49.42254241639662
+    },
+    {
+      "symbol": "MCD",
+      "momentum_score": 0.06999080131758839,
+      "rsi": 48.4736294608602
+    },
+    {
+      "symbol": "SBUX",
+      "momentum_score": 0.3677560090770542,
+      "rsi": 74.05989571850311
+    },
+    {
+      "symbol": "TGT",
+      "momentum_score": 0.4999590548180206,
+      "rsi": 84.87990450733747
+    },
+    {
+      "symbol": "XOM",
+      "momentum_score": 0.5244830985294527,
+      "rsi": 70.98133632264148
+    },
+    {
+      "symbol": "CVX",
+      "momentum_score": 0.45578126884809306,
+      "rsi": 71.71828417950759
+    },
+    {
+      "symbol": "CAT",
+      "momentum_score": 0.7666126815058091,
+      "rsi": 75.14021626336549
+    },
+    {
+      "symbol": "BA",
+      "momentum_score": 0.4815700754050576,
+      "rsi": 85.15612662606935
+    },
+    {
+      "symbol": "UNP",
+      "momentum_score": -0.19565883093586248,
+      "rsi": 47.01488201166067
+    },
+    {
+      "symbol": "HON",
+      "momentum_score": 0.4063868244310172,
+      "rsi": 84.86015328161972
+    },
+    {
+      "symbol": "GE",
+      "momentum_score": 0.24405290621271122,
+      "rsi": 59.84199299535139
+    },
+    {
+      "symbol": "MMM",
+      "momentum_score": 0.3295936583251381,
+      "rsi": 55.94563981691105
+    },
+    {
+      "symbol": "UPS",
+      "momentum_score": 0.38562554896721907,
+      "rsi": 61.35179781824017
+    },
+    {
+      "symbol": "LMT",
+      "momentum_score": 0.6477449106305851,
+      "rsi": 84.42416283911174
+    }
+  ],
+  "breakouts": [
+    {
+      "symbol": "AAPL",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 29.907896131225183,
+      "distance_to_resistance": 0.013536305087309942,
+      "volume_trend": 0.022956259440684912
+    },
+    {
+      "symbol": "MSFT",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 8.709789252868907,
+      "distance_to_resistance": 0.07195901786400585,
+      "volume_trend": -0.0810000669937696
+    },
+    {
+      "symbol": "GOOGL",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 0.0,
+      "distance_to_resistance": 1.0,
+      "volume_trend": -0.3505995799994587
+    },
+    {
+      "symbol": "AMZN",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 6.377863598345746,
+      "distance_to_resistance": 0.08146542064280905,
+      "volume_trend": -0.06369818857741849
+    },
+    {
+      "symbol": "NVDA",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 27.285632734160025,
+      "distance_to_resistance": 0.047500790385763714,
+      "volume_trend": -0.21464101573921412
+    },
+    {
+      "symbol": "META",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 35.06182867197656,
+      "distance_to_resistance": 0.019668930450412986,
+      "volume_trend": -0.16179443710825792
+    },
+    {
+      "symbol": "TSLA",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 22.276117119691285,
+      "distance_to_resistance": 0.07979429408482143,
+      "volume_trend": -0.16807403996927228
+    },
+    {
+      "symbol": "AMD",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 22.63835307756866,
+      "distance_to_resistance": 0.009446587689725365,
+      "volume_trend": -0.14624989458766524
+    },
+    {
+      "symbol": "CRM",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 1.066483871476906,
+      "distance_to_resistance": 0.1030365833275392,
+      "volume_trend": -0.19323582234753223
+    },
+    {
+      "symbol": "ADBE",
+      "breakout_count": 1,
+      "breakout_types": [
+        "volume_breakout"
+      ],
+      "breakout_directions": [
+        -1
+      ],
+      "breakout_potential": 1.4743009478985742,
+      "distance_to_resistance": 0.14818318791828725,
+      "volume_trend": -0.128822649294549
+    },
+    {
+      "symbol": "JPM",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 28.3620919665729,
+      "distance_to_resistance": 0.009773352689061241,
+      "volume_trend": 0.15456891732775135
+    },
+    {
+      "symbol": "BAC",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 19.83650688109045,
+      "distance_to_resistance": 0.0206539724756382,
+      "volume_trend": -0.038043987156621384
+    },
+    {
+      "symbol": "GS",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 3.888532021286642,
+      "distance_to_resistance": 1.0,
+      "volume_trend": 0.007787822552341339
+    },
+    {
+      "symbol": "MS",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 0.0,
+      "distance_to_resistance": 1.0,
+      "volume_trend": -0.07610290778751316
+    },
+    {
+      "symbol": "V",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 7.608121366415532,
+      "distance_to_resistance": 0.07662065201665877,
+      "volume_trend": 0.07053137482320904
+    },
+    {
+      "symbol": "MA",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 8.438433330941702,
+      "distance_to_resistance": 0.07643557826265227,
+      "volume_trend": 0.1018931158641907
+    },
+    {
+      "symbol": "AXP",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 16.32499102015987,
+      "distance_to_resistance": 0.05071559993234539,
+      "volume_trend": 0.16015564012984873
+    },
+    {
+      "symbol": "BLK",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 14.06852413744771,
+      "distance_to_resistance": 0.04372590345020916,
+      "volume_trend": -0.020087984311231266
+    },
+    {
+      "symbol": "C",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 24.26341950860938,
+      "distance_to_resistance": 0.04629783374706618,
+      "volume_trend": 0.27867228758719564
+    },
+    {
+      "symbol": "WFC",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 2.7317377495678197,
+      "distance_to_resistance": 0.09532703455059213,
+      "volume_trend": 0.06253985548863406
+    },
+    {
+      "symbol": "UNH",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 24.11660611814641,
+      "distance_to_resistance": 0.032151185575280065,
+      "volume_trend": -0.06959142685896347
+    },
+    {
+      "symbol": "JNJ",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 0.0,
+      "distance_to_resistance": 1.0,
+      "volume_trend": -0.101165610151849
+    },
+    {
+      "symbol": "PFE",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 23.987662124261742,
+      "distance_to_resistance": 0.060852148369155784,
+      "volume_trend": -0.13291400161252254
+    },
+    {
+      "symbol": "ABBV",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 20.5140779985494,
+      "distance_to_resistance": 0.03458899231053014,
+      "volume_trend": 0.16645304304727748
+    },
+    {
+      "symbol": "MRK",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 26.271186713257073,
+      "distance_to_resistance": 0.03739777291506801,
+      "volume_trend": -0.11242125793577173
+    },
+    {
+      "symbol": "LLY",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 12.943000077704617,
+      "distance_to_resistance": 0.04822799968918153,
+      "volume_trend": -0.23299747232876178
+    },
+    {
+      "symbol": "TMO",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 27.414433675900835,
+      "distance_to_resistance": 0.01512808189475736,
+      "volume_trend": 0.20140569879507253
+    },
+    {
+      "symbol": "ABT",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 12.105023992324458,
+      "distance_to_resistance": 0.08904175409451502,
+      "volume_trend": -0.09356790297241813
+    },
+    {
+      "symbol": "BMY",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 16.43609622831826,
+      "distance_to_resistance": 0.03976536640467315,
+      "volume_trend": -0.09632357024926919
+    },
+    {
+      "symbol": "AMGN",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 31.14320099614998,
+      "distance_to_resistance": 0.0022391674759560283,
+      "volume_trend": -0.046851326003820803
+    },
+    {
+      "symbol": "WMT",
+      "breakout_count": 1,
+      "breakout_types": [
+        "volume_breakout"
+      ],
+      "breakout_directions": [
+        1
+      ],
+      "breakout_potential": 19.546029578924625,
+      "distance_to_resistance": 1.0,
+      "volume_trend": 0.7818411831569849
+    },
+    {
+      "symbol": "HD",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 23.34771397082033,
+      "distance_to_resistance": 0.006609144116718682,
+      "volume_trend": -0.10631063226971427
+    },
+    {
+      "symbol": "PG",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 27.921298234263155,
+      "distance_to_resistance": 0.02712238429428971,
+      "volume_trend": -0.07967932979077186
+    },
+    {
+      "symbol": "KO",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 26.128910422855558,
+      "distance_to_resistance": 0.008864482777725887,
+      "volume_trend": -0.14329276892499432
+    },
+    {
+      "symbol": "PEP",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 20.22129533350681,
+      "distance_to_resistance": 0.04113889975459947,
+      "volume_trend": 0.029139655067953907
+    },
+    {
+      "symbol": "COST",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 21.45884118988539,
+      "distance_to_resistance": 0.024009409521855707,
+      "volume_trend": 0.03669192424155865
+    },
+    {
+      "symbol": "NKE",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 54.875850354307474,
+      "distance_to_resistance": 0.02904376920884479,
+      "volume_trend": 0.8739583813634768
+    },
+    {
+      "symbol": "MCD",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 36.76850629474123,
+      "distance_to_resistance": 0.011612805782563369,
+      "volume_trend": -0.16058878169588287
+    },
+    {
+      "symbol": "SBUX",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 24.029902318539698,
+      "distance_to_resistance": 0.011669624276096911,
+      "volume_trend": -0.08744374731450355
+    },
+    {
+      "symbol": "TGT",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 1.8349364288382826,
+      "distance_to_resistance": 0.14316096590587216,
+      "volume_trend": 0.0034128939215158915
+    },
+    {
+      "symbol": "XOM",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 4.190078405678155,
+      "distance_to_resistance": 1.0,
+      "volume_trend": 0.1676031362271262
+    },
+    {
+      "symbol": "CVX",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 5.95533947584499,
+      "distance_to_resistance": 1.0,
+      "volume_trend": 0.23821357903379958
+    },
+    {
+      "symbol": "CAT",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 3.0446783758229596,
+      "distance_to_resistance": 1.0,
+      "volume_trend": -0.16956313980628912
+    },
+    {
+      "symbol": "BA",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 5.1059951841374325,
+      "distance_to_resistance": 1.0,
+      "volume_trend": -0.2348081912010468
+    },
+    {
+      "symbol": "UNP",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 19.54842296865937,
+      "distance_to_resistance": 0.03354110756256602,
+      "volume_trend": -0.23164680119070857
+    },
+    {
+      "symbol": "HON",
+      "breakout_count": 1,
+      "breakout_types": [
+        "volume_breakout"
+      ],
+      "breakout_directions": [
+        1
+      ],
+      "breakout_potential": 19.965128418565495,
+      "distance_to_resistance": 0.024338825196541413,
+      "volume_trend": 0.04199338870803393
+    },
+    {
+      "symbol": "GE",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 30.587809826621395,
+      "distance_to_resistance": 0.023591331025241205,
+      "volume_trend": -0.20437452671177658
+    },
+    {
+      "symbol": "MMM",
+      "breakout_count": 1,
+      "breakout_types": [
+        "volume_breakout"
+      ],
+      "breakout_directions": [
+        -1
+      ],
+      "breakout_potential": 23.938047085966883,
+      "distance_to_resistance": 0.0264930558913287,
+      "volume_trend": -0.0932592051161728
+    },
+    {
+      "symbol": "UPS",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 20.491806452368493,
+      "distance_to_resistance": 0.025816054740386507,
+      "volume_trend": -0.08582650160986838
+    },
+    {
+      "symbol": "LMT",
+      "breakout_count": 1,
+      "breakout_types": [
+        "volatility_expansion"
+      ],
+      "breakout_directions": [
+        1
+      ],
+      "breakout_potential": 8.97855803491029,
+      "distance_to_resistance": 1.0,
+      "volume_trend": 0.35914232139641156
+    }
+  ],
+  "alpha_rankings": [
+    {
+      "symbol": "JNJ",
+      "composite_score": 1.2055548376159992,
+      "factor_momentum_6_1": 0.12243913137538043,
+      "factor_ivol": 0.11867183614781943,
+      "rank": 1.0,
+      "percentile": 100.0
+    },
+    {
+      "symbol": "GOOGL",
+      "composite_score": 1.1634910693331342,
+      "factor_momentum_6_1": 0.2509214121176196,
+      "factor_ivol": -0.018223198250992716,
+      "rank": 2.0,
+      "percentile": 98.0
+    },
+    {
+      "symbol": "TMO",
+      "composite_score": 0.8127472605759307,
+      "factor_momentum_6_1": 0.18391820140850218,
+      "factor_ivol": -0.02136874929331603,
+      "rank": 3.0,
+      "percentile": 96.0
+    },
+    {
+      "symbol": "CAT",
+      "composite_score": 0.7662888426026556,
+      "factor_momentum_6_1": 0.17259027842889402,
+      "factor_ivol": -0.01933250990836287,
+      "rank": 4.0,
+      "percentile": 94.0
+    },
+    {
+      "symbol": "WMT",
+      "composite_score": 0.6235967668952133,
+      "factor_momentum_6_1": 0.06829034147528817,
+      "factor_ivol": 0.05642901190375448,
+      "rank": 5.0,
+      "percentile": 92.0
+    },
+    {
+      "symbol": "MCD",
+      "composite_score": 0.5920143859125315,
+      "factor_momentum_6_1": -0.012591991150760512,
+      "factor_ivol": 0.13099486833326682,
+      "rank": 6.0,
+      "percentile": 90.0
+    },
+    {
+      "symbol": "ABBV",
+      "composite_score": 0.5674501849314099,
+      "factor_momentum_6_1": 0.07349279072470183,
+      "factor_ivol": 0.03999724626158016,
+      "rank": 7.0,
+      "percentile": 88.0
+    },
+    {
+      "symbol": "MRK",
+      "composite_score": 0.5413087205839358,
+      "factor_momentum_6_1": 0.10705684465092911,
+      "factor_ivol": 0.0012048994658580368,
+      "rank": 8.0,
+      "percentile": 86.0
+    },
+    {
+      "symbol": "MS",
+      "composite_score": 0.4893287119580701,
+      "factor_momentum_6_1": 0.09856860384846453,
+      "factor_ivol": -0.0007028614568505007,
+      "rank": 9.0,
+      "percentile": 84.0
+    },
+    {
+      "symbol": "AAPL",
+      "composite_score": 0.4844990768837024,
+      "factor_momentum_6_1": 0.11252106130738238,
+      "factor_ivol": -0.015621245930641887,
+      "rank": 10.0,
+      "percentile": 82.0
+    },
+    {
+      "symbol": "GS",
+      "composite_score": 0.4126966497457113,
+      "factor_momentum_6_1": 0.0905467970775556,
+      "factor_ivol": -0.008007467128413338,
+      "rank": 11.0,
+      "percentile": 80.0
+    },
+    {
+      "symbol": "KO",
+      "composite_score": 0.39393370660349625,
+      "factor_momentum_6_1": -0.05614919773934236,
+      "factor_ivol": 0.13493593906004162,
+      "rank": 12.0,
+      "percentile": 78.0
+    },
+    {
+      "symbol": "AXP",
+      "composite_score": 0.3786317997382563,
+      "factor_momentum_6_1": 0.08698164274057135,
+      "factor_ivol": -0.01125528279292009,
+      "rank": 13.0,
+      "percentile": 76.0
+    },
+    {
+      "symbol": "BAC",
+      "composite_score": 0.36184051130258915,
+      "factor_momentum_6_1": 0.03376240908946619,
+      "factor_ivol": 0.03860569317105164,
+      "rank": 14.0,
+      "percentile": 74.0
+    },
+    {
+      "symbol": "PEP",
+      "composite_score": 0.3309654229801068,
+      "factor_momentum_6_1": -0.019284920921765168,
+      "factor_ivol": 0.08547800551778653,
+      "rank": 15.0,
+      "percentile": 72.0
+    },
+    {
+      "symbol": "XOM",
+      "composite_score": 0.3296961445134614,
+      "factor_momentum_6_1": -0.002086809745216882,
+      "factor_ivol": 0.06802603864790917,
+      "rank": 16.0,
+      "percentile": 70.0
+    },
+    {
+      "symbol": "LLY",
+      "composite_score": 0.32873447321909255,
+      "factor_momentum_6_1": 0.17109248676776684,
+      "factor_ivol": -0.10534559212394833,
+      "rank": 17.0,
+      "percentile": 68.0
+    },
+    {
+      "symbol": "C",
+      "composite_score": 0.30510505803172355,
+      "factor_momentum_6_1": 0.07084223189993842,
+      "factor_ivol": -0.009821220293593705,
+      "rank": 18.0,
+      "percentile": 66.0
+    },
+    {
+      "symbol": "WFC",
+      "composite_score": 0.27644638703187085,
+      "factor_momentum_6_1": 0.03696733108328314,
+      "factor_ivol": 0.018321946323091032,
+      "rank": 19.0,
+      "percentile": 64.0
+    },
+    {
+      "symbol": "UNP",
+      "composite_score": 0.27394107803067047,
+      "factor_momentum_6_1": -0.0316935548800578,
+      "factor_ivol": 0.0864817704861919,
+      "rank": 20.0,
+      "percentile": 62.0
+    },
+    {
+      "symbol": "BMY",
+      "composite_score": 0.2357192821200674,
+      "factor_momentum_6_1": 0.03466963526052496,
+      "factor_ivol": 0.01247422116348852,
+      "rank": 21.0,
+      "percentile": 60.0
+    },
+    {
+      "symbol": "JPM",
+      "composite_score": 0.21506435293151,
+      "factor_momentum_6_1": -0.014185228056466551,
+      "factor_ivol": 0.05719809864276855,
+      "rank": 22.0,
+      "percentile": 57.99999999999999
+    },
+    {
+      "symbol": "ABT",
+      "composite_score": 0.18706576116082568,
+      "factor_momentum_6_1": -0.05647656393481332,
+      "factor_ivol": 0.09388971616697846,
+      "rank": 23.0,
+      "percentile": 56.00000000000001
+    },
+    {
+      "symbol": "AMGN",
+      "composite_score": 0.16753672146077653,
+      "factor_momentum_6_1": 0.006000124878745431,
+      "factor_ivol": 0.027507219413409875,
+      "rank": 24.0,
+      "percentile": 54.0
+    },
+    {
+      "symbol": "PG",
+      "composite_score": 0.1415365022800992,
+      "factor_momentum_6_1": -0.09745855646554427,
+      "factor_ivol": 0.1257658569215641,
+      "rank": 25.0,
+      "percentile": 52.0
+    },
+    {
+      "symbol": "MA",
+      "composite_score": 0.12185473316647141,
+      "factor_momentum_6_1": -0.0578332988123636,
+      "factor_ivol": 0.08220424544565788,
+      "rank": 26.0,
+      "percentile": 50.0
+    },
+    {
+      "symbol": "PFE",
+      "composite_score": 0.10546469256642291,
+      "factor_momentum_6_1": -0.026791935154568094,
+      "factor_ivol": 0.04788487366785268,
+      "rank": 27.0,
+      "percentile": 48.0
+    },
+    {
+      "symbol": "HD",
+      "composite_score": 0.0011842285950417614,
+      "factor_momentum_6_1": -0.07671074282003856,
+      "factor_ivol": 0.07694758853904692,
+      "rank": 28.0,
+      "percentile": 46.0
+    },
+    {
+      "symbol": "V",
+      "composite_score": 0.000635650339800356,
+      "factor_momentum_6_1": -0.081172695310921,
+      "factor_ivol": 0.08129982537888107,
+      "rank": 29.0,
+      "percentile": 44.0
+    },
+    {
+      "symbol": "GE",
+      "composite_score": -0.0030224121192139056,
+      "factor_momentum_6_1": 0.002197803515119041,
+      "factor_ivol": -0.002802285938961822,
+      "rank": 30.0,
+      "percentile": 42.0
+    },
+    {
+      "symbol": "CVX",
+      "composite_score": -0.0032670488273343207,
+      "factor_momentum_6_1": -0.057521376494870685,
+      "factor_ivol": 0.05686796672940382,
+      "rank": 31.0,
+      "percentile": 40.0
+    },
+    {
+      "symbol": "LMT",
+      "composite_score": -0.04461744536508945,
+      "factor_momentum_6_1": -0.04119187842767083,
+      "factor_ivol": 0.03226838935465294,
+      "rank": 32.0,
+      "percentile": 38.0
+    },
+    {
+      "symbol": "MMM",
+      "composite_score": -0.05915438551437618,
+      "factor_momentum_6_1": -0.025345949095247695,
+      "factor_ivol": 0.013515071992372459,
+      "rank": 33.0,
+      "percentile": 36.0
+    },
+    {
+      "symbol": "COST",
+      "composite_score": -0.17990755041425582,
+      "factor_momentum_6_1": -0.12821129187296323,
+      "factor_ivol": 0.09222978179011207,
+      "rank": 34.0,
+      "percentile": 34.0
+    },
+    {
+      "symbol": "MSFT",
+      "composite_score": -0.2286314173798389,
+      "factor_momentum_6_1": -0.11268847771982,
+      "factor_ivol": 0.06696219424385222,
+      "rank": 35.0,
+      "percentile": 32.0
+    },
+    {
+      "symbol": "BLK",
+      "composite_score": -0.2631264267103889,
+      "factor_momentum_6_1": -0.08204488298594431,
+      "factor_ivol": 0.029419597643866535,
+      "rank": 36.0,
+      "percentile": 30.0
+    },
+    {
+      "symbol": "UPS",
+      "composite_score": -0.2855229627676269,
+      "factor_momentum_6_1": -0.033484060762684696,
+      "factor_ivol": -0.023620531790840688,
+      "rank": 37.0,
+      "percentile": 28.000000000000004
+    },
+    {
+      "symbol": "HON",
+      "composite_score": -0.36020684196787167,
+      "factor_momentum_6_1": -0.12898201280141328,
+      "factor_ivol": 0.05694064440783894,
+      "rank": 38.0,
+      "percentile": 26.0
+    },
+    {
+      "symbol": "ADBE",
+      "composite_score": -0.5125328213425204,
+      "factor_momentum_6_1": -0.09452818254639653,
+      "factor_ivol": -0.007978381722107561,
+      "rank": 39.0,
+      "percentile": 24.0
+    },
+    {
+      "symbol": "CRM",
+      "composite_score": -0.5458122023793771,
+      "factor_momentum_6_1": -0.08061037308730451,
+      "factor_ivol": -0.028552067388570912,
+      "rank": 40.0,
+      "percentile": 22.0
+    },
+    {
+      "symbol": "TGT",
+      "composite_score": -0.5817739645889046,
+      "factor_momentum_6_1": -0.07646319358491374,
+      "factor_ivol": -0.03989159933286719,
+      "rank": 41.0,
+      "percentile": 20.0
+    },
+    {
+      "symbol": "UNH",
+      "composite_score": -0.6399925076128127,
+      "factor_momentum_6_1": 0.052987787378550935,
+      "factor_ivol": -0.18098628890111346,
+      "rank": 42.0,
+      "percentile": 18.0
+    },
+    {
+      "symbol": "TSLA",
+      "composite_score": -0.6676355889072929,
+      "factor_momentum_6_1": 0.20407888357181558,
+      "factor_ivol": -0.3376060013532742,
+      "rank": 43.0,
+      "percentile": 16.0
+    },
+    {
+      "symbol": "AMZN",
+      "composite_score": -0.6913282262362911,
+      "factor_momentum_6_1": -0.09427280241675123,
+      "factor_ivol": -0.043992842830507,
+      "rank": 44.0,
+      "percentile": 14.000000000000002
+    },
+    {
+      "symbol": "SBUX",
+      "composite_score": -0.7989082384854349,
+      "factor_momentum_6_1": -0.11555141508205996,
+      "factor_ivol": -0.04423023261502703,
+      "rank": 45.0,
+      "percentile": 12.0
+    },
+    {
+      "symbol": "META",
+      "composite_score": -1.0332425687114122,
+      "factor_momentum_6_1": -0.1286061785489074,
+      "factor_ivol": -0.07804233519337501,
+      "rank": 46.0,
+      "percentile": 10.0
+    },
+    {
+      "symbol": "BA",
+      "composite_score": -1.0913246284862947,
+      "factor_momentum_6_1": -0.13681671326165998,
+      "factor_ivol": -0.08144821243559901,
+      "rank": 47.0,
+      "percentile": 8.0
+    },
+    {
+      "symbol": "AMD",
+      "composite_score": -1.1484982841494098,
+      "factor_momentum_6_1": 0.09933795048595634,
+      "factor_ivol": -0.3290376073158383,
+      "rank": 48.0,
+      "percentile": 6.0
+    },
+    {
+      "symbol": "NKE",
+      "composite_score": -1.3248212695718469,
+      "factor_momentum_6_1": -0.13747423545558718,
+      "factor_ivol": -0.12749001845878224,
+      "rank": 49.0,
+      "percentile": 4.0
+    },
+    {
+      "symbol": "NVDA",
+      "composite_score": -1.3510062215729872,
+      "factor_momentum_6_1": -0.07303522995040305,
+      "factor_ivol": -0.1971660143641944,
+      "rank": 50.0,
+      "percentile": 2.0
+    }
+  ],
+  "strong_candidates": [
+    {
+      "symbol": "GOOGL",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.699653256616931,
+      "trend_confidence": 0.797098635066178,
+      "momentum_score": 0.6771149351558489,
+      "rsi": 62.74689302914721,
+      "composite_score": 1.1634910693331342,
+      "percentile": 98.0,
+      "combined_score": 0.780741951047419
+    },
+    {
+      "symbol": "CAT",
+      "trend_direction": "STRONG_UP",
+      "trend_value": 2,
+      "trend_strength": 0.7103955459352633,
+      "trend_confidence": 0.8861244379745834,
+      "momentum_score": 0.7666126815058091,
+      "rsi": 75.14021626336549,
+      "composite_score": 0.7662888426026556,
+      "percentile": 94.0,
+      "combined_score": 0.7496503891636993
+    },
+    {
+      "symbol": "TMO",
+      "trend_direction": "STRONG_UP",
+      "trend_value": 2,
+      "trend_strength": 0.576311450776297,
+      "trend_confidence": 0.7404302773434663,
+      "momentum_score": 0.6976937635974383,
+      "rsi": 60.920056014389324,
+      "composite_score": 0.8127472605759307,
+      "percentile": 96.0,
+      "combined_score": 0.6957951188446436
+    },
+    {
+      "symbol": "JNJ",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.45039964267990545,
+      "trend_confidence": 0.7875560020500392,
+      "momentum_score": 0.6428712098507406,
+      "rsi": 74.96589057493823,
+      "composite_score": 1.2055548376159992,
+      "percentile": 100.0,
+      "combined_score": 0.6922683767442679
+    },
+    {
+      "symbol": "GS",
+      "trend_direction": "STRONG_UP",
+      "trend_value": 2,
+      "trend_strength": 0.6949505655421471,
+      "trend_confidence": 0.8329151649020161,
+      "momentum_score": 0.5912753355428404,
+      "rsi": 63.74942088703753,
+      "composite_score": 0.4126966497457113,
+      "percentile": 80.0,
+      "combined_score": 0.5688042988034936
+    },
+    {
+      "symbol": "WMT",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.5315872829016621,
+      "trend_confidence": 0.6967381595594858,
+      "momentum_score": 0.550939958173873,
+      "rsi": 72.30920521259381,
+      "composite_score": 0.6235967668952133,
+      "percentile": 92.0,
+      "combined_score": 0.5669311982086118
+    },
+    {
+      "symbol": "MS",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.6319297493963516,
+      "trend_confidence": 0.7784554381815543,
+      "momentum_score": 0.46593452232438326,
+      "rsi": 62.0362940427283,
+      "composite_score": 0.4893287119580701,
+      "percentile": 84.0,
+      "combined_score": 0.5227513473360799
+    },
+    {
+      "symbol": "XOM",
+      "trend_direction": "STRONG_UP",
+      "trend_value": 2,
+      "trend_strength": 0.6307693922268371,
+      "trend_confidence": 0.9216678889071299,
+      "momentum_score": 0.5244830985294527,
+      "rsi": 70.98133632264148,
+      "composite_score": 0.3296961445134614,
+      "percentile": 70.0,
+      "combined_score": 0.4979329004338707
+    },
+    {
+      "symbol": "MRK",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.6783139742247506,
+      "trend_confidence": 0.7654734735107971,
+      "momentum_score": 0.1406398236236632,
+      "rsi": 53.55205531622898,
+      "composite_score": 0.5413087205839358,
+      "percentile": 86.0,
+      "combined_score": 0.42214273789207124
+    },
+    {
+      "symbol": "PFE",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.38977127990314475,
+      "trend_confidence": 0.6356366361149448,
+      "momentum_score": 0.3426471092666497,
+      "rsi": 58.68486973434516,
+      "composite_score": 0.10546469256642291,
+      "percentile": 48.0,
+      "combined_score": 0.2856296354475302
+    },
+    {
+      "symbol": "C",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.5331556089032626,
+      "trend_confidence": 0.5867677303601437,
+      "momentum_score": 0.052476050866335285,
+      "rsi": 51.53048601075721,
+      "composite_score": 0.30510505803172355,
+      "percentile": 66.0,
+      "combined_score": 0.27246862042702996
+    },
+    {
+      "symbol": "BMY",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.6343305199291769,
+      "trend_confidence": 0.723802559571423,
+      "momentum_score": 0.010511744805411926,
+      "rsi": 50.9857039062458,
+      "composite_score": 0.2357192821200674,
+      "percentile": 60.0,
+      "combined_score": 0.26521963853693803
+    },
+    {
+      "symbol": "LLY",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.5098286997347886,
+      "trend_confidence": 0.5338723223849695,
+      "momentum_score": 0.0009900925567602882,
+      "rsi": 38.427515641461845,
+      "composite_score": 0.32873447321909255,
+      "percentile": 68.0,
+      "combined_score": 0.2519649889088684
+    }
+  ]
+}

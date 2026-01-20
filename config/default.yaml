@@ -1,0 +1,97 @@
+# Stock Research Configuration
+# Default configuration for market research and alpha generation
+
+# Data Sources
+data:
+  market_data:
+    source: yfinance  # yfinance, polygon, alpaca
+    cache_dir: ./cache/market_data
+    rate_limit: 5  # requests per second
+
+  fundamentals:
+    source: yfinance
+    cache_dir: ./cache/fundamentals
+
+  sentiment:
+    news_sources:
+      - yahoo
+    lookback_days: 30
+
+# Universe Selection
+universe:
+  # Default universe: S&P 500
+  base: sp500
+  # Filters
+  min_market_cap: 1000000000  # $1B minimum
+  min_avg_volume: 500000  # 500K shares/day minimum
+  exclude_sectors:
+    - Utilities  # Often excluded for momentum strategies
+  # Custom symbol list (optional, overrides base)
+  # symbols:
+  #   - AAPL
+  #   - MSFT
+  #   - GOOGL
+
+# Alpha Factors
+alpha:
+  # Factor weights (should sum to ~1.0)
+  weights:
+    momentum_12_1: 0.20
+    momentum_6_1: 0.10
+    earnings_yield: 0.15
+    fcf_yield: 0.10
+    roe: 0.10
+    gross_profitability: 0.10
+    ivol: 0.10
+    size: 0.05
+    revenue_growth: 0.10
+
+  # Factor-specific settings
+  momentum:
+    lookback_periods: [21, 63, 126, 252]
+    skip_recent: 21  # Skip last month for 12-1 momentum
+
+  value:
+    use_forward_estimates: false
+
+# Signal Generation
+signals:
+  trend:
+    # Moving average crossover
+    fast_ma: 50
+    slow_ma: 200
+    # ADX threshold for trend confirmation
+    adx_threshold: 25
+
+  momentum:
+    rsi_period: 14
+    macd_fast: 12
+    macd_slow: 26
+    macd_signal: 9
+
+  breakout:
+    lookback: 20
+    volume_threshold: 1.5  # 1.5x average volume
+
+# Backtesting
+backtest:
+  initial_capital: 100000
+  commission: 0.001  # 0.1%
+  slippage: 0.0005  # 0.05%
+  max_positions: 20
+  position_size: equal  # equal, volatility, alpha
+  rebalance_frequency: monthly  # daily, weekly, monthly
+
+# Risk Management
+risk:
+  max_position_size: 0.10  # 10% max per position
+  max_sector_exposure: 0.30  # 30% max per sector
+  stop_loss: 0.10  # 10% trailing stop
+  take_profit: null  # No take profit by default
+
+# Output
+output:
+  results_dir: ./results
+  save_trades: true
+  save_positions: true
+  generate_report: true
