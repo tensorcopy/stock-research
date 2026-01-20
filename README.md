@@ -46,8 +46,33 @@ source venv/bin/activate  # Linux/Mac
 # or: venv\Scripts\activate  # Windows
 
 # Install dependencies
-pip install -r requirements.txt
+pip install -e .
 ```
+
+## Automated Daily Research (GitHub Actions)
+
+This repository includes a GitHub Actions workflow that automatically runs market research every weekday after market close and sends email notifications with the results.
+
+### Quick Setup
+
+1. **Configure GitHub Secrets** (required for email notifications):
+   - Go to your repository **Settings** → **Secrets and variables** → **Actions**
+   - Add the following secrets:
+     - `EMAIL_SMTP_HOST` (e.g., `smtp.gmail.com`)
+     - `EMAIL_SMTP_PORT` (e.g., `587`)
+     - `EMAIL_FROM` (your email address)
+     - `EMAIL_TO` (recipient email address)
+     - `EMAIL_PASSWORD` (app password or account password)
+
+2. **Enable GitHub Actions**:
+   - The workflow runs automatically Mon-Fri at 5:00 PM ET (22:00 UTC)
+   - Or trigger manually via **Actions** tab → **Daily Market Research** → **Run workflow**
+
+3. **Receive Daily Reports**:
+   - HTML email with market overview, top momentum stocks, breakouts, and strong buy candidates
+   - Attached JSON and CSV files with complete analysis
+
+For detailed setup instructions, email provider configuration, and troubleshooting, see **[GITHUB_ACTIONS_SETUP.md](GITHUB_ACTIONS_SETUP.md)**.
 
 ## Quick Start
 
