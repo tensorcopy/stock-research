@@ -40,13 +40,8 @@ Research-backed factors for stock selection:
 # Clone the repository
 cd projects/stock-research
 
-# Create virtual environment (optional but recommended)
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# or: venv\Scripts\activate  # Windows
-
-# Install dependencies
-pip install -r requirements.txt
+# Install dependencies with uv
+uv sync
 ```
 
 ## Quick Start
@@ -134,7 +129,8 @@ print(f"Total Return: {result.metrics['total_return']:.2%}")
 ```
 stock-research/
 ├── README.md
-├── requirements.txt
+├── pyproject.toml
+├── uv.lock
 ├── config/
 │   └── default.yaml         # Default configuration
 ├── src/
@@ -228,10 +224,10 @@ The framework calculates comprehensive metrics:
 
 ```bash
 # Run all tests
-pytest tests/ -v
+uv run pytest tests/ -v
 
 # Run with coverage
-pytest tests/ --cov=src --cov-report=html
+uv run pytest tests/ --cov=src --cov-report=html
 ```
 
 ## Contributing
