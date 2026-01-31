@@ -85,13 +85,6 @@ jobs:
           echo "Starting market analysis at $(date)"
           uv run python analyze_market.py
           echo "Analysis completed at $(date)"
-
-          # Get latest results files
-          LATEST_JSON=$(ls -t results/market_analysis_*.json | head -1)
-          LATEST_CSV=$(ls -t results/alpha_rankings_*.csv | head -1)
-
-          echo "json_file=$LATEST_JSON" >> $GITHUB_OUTPUT
-          echo "csv_file=$LATEST_CSV" >> $GITHUB_OUTPUT
           echo "date=$(date +%Y-%m-%d)" >> $GITHUB_OUTPUT
 
       - name: Extract summary for notification
@@ -100,27 +93,17 @@ jobs:
           python3 << 'EOF'
           import json
           import os
-          from pathlib import Path
 
-          # Find latest results
-          results_dir = Path("results")
-          json_files = sorted(results_dir.glob("market_analysis_*.json"), reverse=True)
-
-          if not json_files:
-              print("No results found")
-              exit(1)
-
-          with open(json_files[0]) as f:
+          with open("results/latest.json") as f:
               data = json.load(f)
 
           market = data.get("market_overview", {})
           candidates = data.get("strong_candidates", [])[:5]
 
-          # Create summary
           summary_lines = [
-              f"**Market Sentiment:** {market.get('sentiment', 'N/A')} ({market.get('bullish_pct', 0):.1f}% bullish)",
+              f"**Sentiment:** {market.get('sentiment', 'N/A')} ({market.get('bullish_pct', 0):.1f}% bullish)",
               "",
-              "**Top Alpha Opportunities:**",
+              "**Top Picks:**",
           ]
 
           for c in candidates:
@@ -130,13 +113,11 @@ jobs:
 
           summary = "\n".join(summary_lines)
 
-          # Write to GitHub output (handle multiline)
           with open(os.environ["GITHUB_OUTPUT"], "a") as f:
               f.write("summary<<EOF\n")
               f.write(summary)
               f.write("\nEOF\n")
 
-          # Also print for logs
           print(summary)
           EOF
 
@@ -144,9 +125,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: market-analysis-${{ steps.analysis.outputs.date }}
-          path: |
-            results/market_analysis_*.json
-            results/alpha_rankings_*.csv
+          path: results/
           retention-days: 90
 
       - name: Commit results to repository
@@ -156,13 +135,10 @@ jobs:
 
           git add results/
 
-          # Check if there are changes to commit
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "📊 Daily market analysis - ${{ steps.analysis.outputs.date }}
-
-          Market: ${{ steps.summary.outputs.summary }}"
+            git commit -m "📊 Market analysis - ${{ steps.analysis.outputs.date }}"
             git push
           fi
 
@@ -225,10 +201,9 @@ jobs:
 
       - name: Create summary
         run: |
-          echo "## 📊 Market Analysis Results" >> $GITHUB_STEP_SUMMARY
+          echo "## 📊 Market Analysis - ${{ steps.analysis.outputs.date }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "${{ steps.summary.outputs.summary }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### Artifacts" >> $GITHUB_STEP_SUMMARY
-          echo "- JSON: \`${{ steps.analysis.outputs.json_file }}\`" >> $GITHUB_STEP_SUMMARY
-          echo "- CSV: \`${{ steps.analysis.outputs.csv_file }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "---" >> $GITHUB_STEP_SUMMARY
+          echo "📁 **Results:** [results/SUMMARY.md](../blob/main/results/SUMMARY.md)" >> $GITHUB_STEP_SUMMARY

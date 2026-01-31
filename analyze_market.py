@@ -328,21 +328,73 @@ def save_results(results: dict, output_dir: str = "./results"):
     output_path = Path(output_dir)
     output_path.mkdir(parents=True, exist_ok=True)
 
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-
-    # Save full results as JSON
     import json
-    json_path = output_path / f"market_analysis_{timestamp}.json"
+    date_str = datetime.now().strftime("%Y-%m-%d")
+
+    # Save full results as JSON (overwrite latest)
+    json_path = output_path / "latest.json"
     with open(json_path, "w") as f:
         json.dump(results, f, indent=2, default=str)
 
-    print(f"\nResults saved to: {json_path}")
-
-    # Save summary CSV
+    # Save alpha rankings CSV (overwrite latest)
+    csv_path = output_path / "alpha_rankings.csv"
     if results.get("alpha_rankings"):
-        csv_path = output_path / f"alpha_rankings_{timestamp}.csv"
         pd.DataFrame(results["alpha_rankings"]).to_csv(csv_path, index=False)
-        print(f"Alpha rankings saved to: {csv_path}")
+
+    # Generate summary markdown
+    summary_path = output_path / "SUMMARY.md"
+    market = results.get("market_overview", {})
+    candidates = results.get("strong_candidates", [])
+    alpha_rankings = results.get("alpha_rankings", [])
+
+    summary_lines = [
+        f"# Market Analysis Summary",
+        f"",
+        f"**Date:** {date_str}  ",
+        f"**Sentiment:** {market.get('sentiment', 'N/A')} ({market.get('bullish_pct', 0):.1f}% bullish)",
+        f"",
+        f"---",
+        f"",
+        f"## Top Alpha Opportunities",
+        f"",
+        f"| Rank | Symbol | Trend | Momentum | Alpha Score |",
+        f"|------|--------|-------|----------|-------------|",
+    ]
+
+    for i, c in enumerate(candidates[:10], 1):
+        summary_lines.append(
+            f"| {i} | **{c['symbol']}** | {c['trend_direction']} | {c['momentum_score']:+.2f} | {c['composite_score']:+.2f} |"
+        )
+
+    summary_lines.extend([
+        f"",
+        f"---",
+        f"",
+        f"## Full Alpha Rankings",
+        f"",
+        f"| Symbol | Alpha Score | Percentile |",
+        f"|--------|-------------|------------|",
+    ])
+
+    for r in alpha_rankings[:20]:
+        summary_lines.append(
+            f"| {r['symbol']} | {r['composite_score']:+.3f} | {r.get('percentile', 0):.0f} |"
+        )
+
+    summary_lines.extend([
+        f"",
+        f"---",
+        f"",
+        f"*Updated: {datetime.now().strftime('%Y-%m-%d %H:%M')} UTC*",
+    ])
+
+    with open(summary_path, "w") as f:
+        f.write("\n".join(summary_lines))
+
+    print(f"\nResults saved to: {output_path}")
+    print(f"  - {json_path.name}")
+    print(f"  - {csv_path.name}")
+    print(f"  - {summary_path.name}")
 
     return str(json_path)
 
