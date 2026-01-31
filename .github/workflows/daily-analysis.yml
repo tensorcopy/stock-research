@@ -50,7 +50,15 @@ jobs:
 
       - name: Check if trading day
         id: trading-day
+        env:
+          IS_MANUAL: ${{ github.event_name == 'workflow_dispatch' }}
         run: |
+          # Skip check for manual runs (allows testing on weekends/holidays)
+          if [ "$IS_MANUAL" = "true" ]; then
+            echo "Manual trigger - skipping trading day check"
+            exit 0
+          fi
+
           # Check if today is a US market holiday
           python3 << 'EOF'
           import sys
