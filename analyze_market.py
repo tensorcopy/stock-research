@@ -325,28 +325,23 @@ def analyze_market(
 
 def save_results(results: dict, output_dir: str = "./results"):
     """Save analysis results to files"""
+    import json
+
     output_path = Path(output_dir)
     output_path.mkdir(parents=True, exist_ok=True)
 
-    import json
     date_str = datetime.now().strftime("%Y-%m-%d")
+    time_str = datetime.now().strftime("%Y-%m-%d %H:%M")
 
-    # Save full results as JSON (overwrite latest)
-    json_path = output_path / "latest.json"
-    with open(json_path, "w") as f:
-        json.dump(results, f, indent=2, default=str)
+    # Create dated subfolder for historical archive
+    history_path = output_path / date_str
+    history_path.mkdir(parents=True, exist_ok=True)
 
-    # Save alpha rankings CSV (overwrite latest)
-    csv_path = output_path / "alpha_rankings.csv"
-    if results.get("alpha_rankings"):
-        pd.DataFrame(results["alpha_rankings"]).to_csv(csv_path, index=False)
-
-    # Generate summary markdown
-    summary_path = output_path / "SUMMARY.md"
     market = results.get("market_overview", {})
     candidates = results.get("strong_candidates", [])
     alpha_rankings = results.get("alpha_rankings", [])
 
+    # Generate summary markdown content
     summary_lines = [
         f"# Market Analysis Summary",
         f"",
@@ -385,18 +380,36 @@ def save_results(results: dict, output_dir: str = "./results"):
         f"",
         f"---",
         f"",
-        f"*Updated: {datetime.now().strftime('%Y-%m-%d %H:%M')} UTC*",
+        f"*Updated: {time_str} UTC*",
     ])
 
-    with open(summary_path, "w") as f:
-        f.write("\n".join(summary_lines))
+    summary_content = "\n".join(summary_lines)
 
-    print(f"\nResults saved to: {output_path}")
-    print(f"  - {json_path.name}")
-    print(f"  - {csv_path.name}")
-    print(f"  - {summary_path.name}")
+    # Save to historical subfolder
+    with open(history_path / "analysis.json", "w") as f:
+        json.dump(results, f, indent=2, default=str)
 
-    return str(json_path)
+    if alpha_rankings:
+        pd.DataFrame(alpha_rankings).to_csv(history_path / "alpha_rankings.csv", index=False)
+
+    with open(history_path / "SUMMARY.md", "w") as f:
+        f.write(summary_content)
+
+    # Save latest copies at root level
+    with open(output_path / "latest.json", "w") as f:
+        json.dump(results, f, indent=2, default=str)
+
+    if alpha_rankings:
+        pd.DataFrame(alpha_rankings).to_csv(output_path / "alpha_rankings.csv", index=False)
+
+    with open(output_path / "SUMMARY.md", "w") as f:
+        f.write(summary_content)
+
+    print(f"\nResults saved:")
+    print(f"  Latest:  {output_path}/")
+    print(f"  History: {history_path}/")
+
+    return str(history_path)
 
 
 if __name__ == "__main__":
