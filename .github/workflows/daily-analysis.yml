@@ -155,7 +155,6 @@ jobs:
           retention-days: 90
 
       - name: Commit results to repository
-        if: github.event_name == 'schedule' || github.event.inputs.commit_results == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -166,7 +165,9 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Daily market analysis - ${{ steps.analysis.outputs.date }}"
+            git commit -m "📊 Daily market analysis - ${{ steps.analysis.outputs.date }}
+
+          Market: ${{ steps.summary.outputs.summary }}"
             git push
           fi
 
