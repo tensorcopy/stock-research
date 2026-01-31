@@ -1,0 +1,230 @@
+name: Daily Market Analysis
+
+on:
+  # Run at 4:30 PM ET (21:30 UTC) on weekdays
+  schedule:
+    - cron: '30 21 * * 1-5'
+
+  # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      symbols:
+        description: 'Comma-separated symbols (leave empty for default)'
+        required: false
+        default: ''
+
+# Prevent concurrent runs
+concurrency:
+  group: market-analysis
+  cancel-in-progress: false
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+
+    # Skip on US market holidays (approximate - update annually)
+    # Can also use a holiday check in the script
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'schedule' &&
+       !contains('01-01,01-20,02-17,04-03,05-25,06-19,07-04,09-07,11-26,12-25',
+                 format('{0}-{1}', format('{0:02d}', fromJSON(format('[{0}]', github.event.schedule))[0]),
+                        format('{0:02d}', fromJSON(format('[{0}]', github.event.schedule))[1]))))
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+        with:
+          version: "latest"
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Check if trading day
+        id: trading-day
+        run: |
+          # Check if today is a US market holiday
+          python3 << 'EOF'
+          import sys
+          from datetime import datetime
+
+          HOLIDAYS_2026 = [
+              "2026-01-01", "2026-01-19", "2026-02-16", "2026-04-03",
+              "2026-05-25", "2026-06-19", "2026-07-03", "2026-09-07",
+              "2026-11-26", "2026-12-25"
+          ]
+
+          today = datetime.now().strftime("%Y-%m-%d")
+          weekday = datetime.now().weekday()
+
+          if weekday >= 5:
+              print("Weekend - not a trading day")
+              sys.exit(1)
+
+          if today in HOLIDAYS_2026:
+              print(f"Holiday ({today}) - not a trading day")
+              sys.exit(1)
+
+          print(f"Trading day: {today}")
+          EOF
+
+      - name: Run market analysis
+        id: analysis
+        run: |
+          echo "Starting market analysis at $(date)"
+          uv run python analyze_market.py
+          echo "Analysis completed at $(date)"
+
+          # Get latest results files
+          LATEST_JSON=$(ls -t results/market_analysis_*.json | head -1)
+          LATEST_CSV=$(ls -t results/alpha_rankings_*.csv | head -1)
+
+          echo "json_file=$LATEST_JSON" >> $GITHUB_OUTPUT
+          echo "csv_file=$LATEST_CSV" >> $GITHUB_OUTPUT
+          echo "date=$(date +%Y-%m-%d)" >> $GITHUB_OUTPUT
+
+      - name: Extract summary for notification
+        id: summary
+        run: |
+          python3 << 'EOF'
+          import json
+          import os
+          from pathlib import Path
+
+          # Find latest results
+          results_dir = Path("results")
+          json_files = sorted(results_dir.glob("market_analysis_*.json"), reverse=True)
+
+          if not json_files:
+              print("No results found")
+              exit(1)
+
+          with open(json_files[0]) as f:
+              data = json.load(f)
+
+          market = data.get("market_overview", {})
+          candidates = data.get("strong_candidates", [])[:5]
+
+          # Create summary
+          summary_lines = [
+              f"**Market Sentiment:** {market.get('sentiment', 'N/A')} ({market.get('bullish_pct', 0):.1f}% bullish)",
+              "",
+              "**Top Alpha Opportunities:**",
+          ]
+
+          for c in candidates:
+              summary_lines.append(
+                  f"- **{c['symbol']}** | {c['trend_direction']} | Mom: {c['momentum_score']:+.2f} | Alpha: {c['composite_score']:+.2f}"
+              )
+
+          summary = "\n".join(summary_lines)
+
+          # Write to GitHub output (handle multiline)
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write("summary<<EOF\n")
+              f.write(summary)
+              f.write("\nEOF\n")
+
+          # Also print for logs
+          print(summary)
+          EOF
+
+      - name: Upload results as artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: market-analysis-${{ steps.analysis.outputs.date }}
+          path: |
+            results/market_analysis_*.json
+            results/alpha_rankings_*.csv
+          retention-days: 90
+
+      - name: Commit results to repository
+        if: github.event_name == 'schedule' || github.event.inputs.commit_results == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add results/
+
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Daily market analysis - ${{ steps.analysis.outputs.date }}"
+            git push
+          fi
+
+      # Optional: Send Slack notification
+      - name: Send Slack notification
+        if: ${{ vars.SLACK_WEBHOOK_URL != '' }}
+        uses: slackapi/slack-github-action@v1.26.0
+        with:
+          payload: |
+            {
+              "text": "Daily Market Analysis - ${{ steps.analysis.outputs.date }}",
+              "blocks": [
+                {
+                  "type": "header",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "📊 Daily Market Analysis - ${{ steps.analysis.outputs.date }}"
+                  }
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "${{ steps.summary.outputs.summary }}"
+                  }
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View full results>"
+                  }
+                }
+              ]
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ vars.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
+
+      # Optional: Send email via SendGrid
+      - name: Send email notification
+        if: ${{ vars.SENDGRID_API_KEY != '' }}
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.sendgrid.net
+          server_port: 587
+          username: apikey
+          password: ${{ secrets.SENDGRID_API_KEY }}
+          subject: "Daily Market Analysis - ${{ steps.analysis.outputs.date }}"
+          to: ${{ vars.NOTIFICATION_EMAIL }}
+          from: ${{ vars.SENDER_EMAIL }}
+          body: |
+            Daily Market Analysis Report
+            ============================
+
+            ${{ steps.summary.outputs.summary }}
+
+            View full results: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          attachments: ${{ steps.analysis.outputs.json_file }},${{ steps.analysis.outputs.csv_file }}
+
+      - name: Create summary
+        run: |
+          echo "## 📊 Market Analysis Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.summary.outputs.summary }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Artifacts" >> $GITHUB_STEP_SUMMARY
+          echo "- JSON: \`${{ steps.analysis.outputs.json_file }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "- CSV: \`${{ steps.analysis.outputs.csv_file }}\`" >> $GITHUB_STEP_SUMMARY
