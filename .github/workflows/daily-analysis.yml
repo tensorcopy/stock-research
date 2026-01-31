@@ -18,18 +18,13 @@ concurrency:
   group: market-analysis
   cancel-in-progress: false
 
+# Required for pushing commits
+permissions:
+  contents: write
+
 jobs:
   analyze:
     runs-on: ubuntu-latest
-
-    # Skip on US market holidays (approximate - update annually)
-    # Can also use a holiday check in the script
-    if: >
-      github.event_name == 'workflow_dispatch' ||
-      (github.event_name == 'schedule' &&
-       !contains('01-01,01-20,02-17,04-03,05-25,06-19,07-04,09-07,11-26,12-25',
-                 format('{0}-{1}', format('{0:02d}', fromJSON(format('[{0}]', github.event.schedule))[0]),
-                        format('{0:02d}', fromJSON(format('[{0}]', github.event.schedule))[1]))))
 
     steps:
       - name: Checkout repository
