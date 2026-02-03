@@ -48,15 +48,8 @@ jobs:
         env:
           IS_MANUAL: ${{ github.event_name == 'workflow_dispatch' }}
         run: |
-          # Skip check for manual runs (allows testing on weekends/holidays)
-          if [ "$IS_MANUAL" = "true" ]; then
-            echo "Manual trigger - skipping trading day check"
-            exit 0
-          fi
-
-          # Check if today is a US market holiday
           python3 << 'EOF'
-          import sys
+          import os
           from datetime import datetime
 
           HOLIDAYS_2026 = [
@@ -65,30 +58,44 @@ jobs:
               "2026-11-26", "2026-12-25"
           ]
 
-          today = datetime.now().strftime("%Y-%m-%d")
-          weekday = datetime.now().weekday()
+          is_manual = os.environ.get("IS_MANUAL", "false") == "true"
+          today_dt = datetime.now()
+          today = today_dt.strftime("%Y-%m-%d")
+          weekday = today_dt.weekday()
 
-          if weekday >= 5:
-              print("Weekend - not a trading day")
-              sys.exit(1)
+          if is_manual:
+              is_trading_day = True
+              reason = "Manual trigger"
+          elif weekday >= 5:
+              is_trading_day = False
+              reason = "Weekend"
+          elif today in HOLIDAYS_2026:
+              is_trading_day = False
+              reason = f"Holiday ({today})"
+          else:
+              is_trading_day = True
+              reason = "Trading day"
 
-          if today in HOLIDAYS_2026:
-              print(f"Holiday ({today}) - not a trading day")
-              sys.exit(1)
+          print(f"{reason} - {today}")
 
-          print(f"Trading day: {today}")
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"is_trading_day={str(is_trading_day).lower()}\n")
+              f.write(f"skip_reason={reason}\n")
           EOF
 
       - name: Run market analysis
         id: analysis
+        if: ${{ steps.trading-day.outputs.is_trading_day == 'true' }}
         run: |
           echo "Starting market analysis at $(date)"
           uv run python analyze_market.py
           echo "Analysis completed at $(date)"
           echo "date=$(date +%Y-%m-%d)" >> $GITHUB_OUTPUT
+          echo "json_file=results/latest.json" >> $GITHUB_OUTPUT
 
       - name: Extract summary for notification
         id: summary
+        if: ${{ steps.trading-day.outputs.is_trading_day == 'true' }}
         run: |
           python3 << 'EOF'
           import json
@@ -122,6 +129,7 @@ jobs:
           EOF
 
       - name: Upload results as artifacts
+        if: ${{ steps.trading-day.outputs.is_trading_day == 'true' }}
         uses: actions/upload-artifact@v4
         with:
           name: market-analysis-${{ steps.analysis.outputs.date }}
@@ -129,6 +137,7 @@ jobs:
           retention-days: 90
 
       - name: Commit results to repository
+        if: ${{ steps.trading-day.outputs.is_trading_day == 'true' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -144,7 +153,7 @@ jobs:
 
       # Optional: Send Slack notification
       - name: Send Slack notification
-        if: ${{ vars.SLACK_WEBHOOK_URL != '' }}
+        if: ${{ steps.trading-day.outputs.is_trading_day == 'true' && vars.SLACK_WEBHOOK_URL != '' }}
         uses: slackapi/slack-github-action@v1.26.0
         with:
           payload: |
@@ -180,7 +189,7 @@ jobs:
 
       # Optional: Send email via SendGrid
       - name: Send email notification
-        if: ${{ vars.SENDGRID_API_KEY != '' }}
+        if: ${{ steps.trading-day.outputs.is_trading_day == 'true' && vars.SENDGRID_API_KEY != '' }}
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.sendgrid.net
@@ -197,9 +206,10 @@ jobs:
             ${{ steps.summary.outputs.summary }}
 
             View full results: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-          attachments: ${{ steps.analysis.outputs.json_file }},${{ steps.analysis.outputs.csv_file }}
+          attachments: ${{ steps.analysis.outputs.json_file }}
 
       - name: Create summary
+        if: ${{ steps.trading-day.outputs.is_trading_day == 'true' }}
         run: |
           echo "## 📊 Market Analysis - ${{ steps.analysis.outputs.date }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
@@ -207,3 +217,10 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "---" >> $GITHUB_STEP_SUMMARY
           echo "📁 **Results:** [results/SUMMARY.md](../blob/main/results/SUMMARY.md)" >> $GITHUB_STEP_SUMMARY
+
+      - name: Create summary (skipped)
+        if: ${{ steps.trading-day.outputs.is_trading_day != 'true' }}
+        run: |
+          echo "## 📊 Market Analysis - Skipped" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Reason: ${{ steps.trading-day.outputs.skip_reason }}" >> $GITHUB_STEP_SUMMARY
