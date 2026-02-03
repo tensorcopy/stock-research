@@ -1,615 +1,615 @@
 {
   "metadata": {
-    "analysis_date": "2026-02-03T04:30:05.609234",
+    "analysis_date": "2026-02-03T21:56:37.317882",
     "symbols_analyzed": 50,
     "lookback_days": 365
   },
   "market_overview": {
     "sentiment": "NEUTRAL",
-    "bullish_pct": 52.0
+    "bullish_pct": 56.00000000000001
   },
   "trends": [
     {
       "symbol": "AAPL",
       "trend_direction": "NEUTRAL",
       "trend_value": 0,
-      "trend_strength": 0.616067042363499,
-      "trend_confidence": 0.5956210168828009
+      "trend_strength": 0.6117109419498361,
+      "trend_confidence": 0.5631018336836464
     },
     {
       "symbol": "MSFT",
-      "trend_direction": "DOWN",
-      "trend_value": -1,
-      "trend_strength": 0.3458629163638792,
-      "trend_confidence": 0.7611657745852505
+      "trend_direction": "STRONG_DOWN",
+      "trend_value": -2,
+      "trend_strength": 0.38328569266189116,
+      "trend_confidence": 0.8139102486757368
     },
     {
       "symbol": "GOOGL",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.6087311799155466,
-      "trend_confidence": 0.6806885446722071
+      "trend_strength": 0.6094641114322237,
+      "trend_confidence": 0.7065084872567355
     },
     {
       "symbol": "AMZN",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.30977809348549457,
-      "trend_confidence": 0.48640243075359596
+      "trend_strength": 0.30817559429643737,
+      "trend_confidence": 0.45240634310558175
     },
     {
       "symbol": "NVDA",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.4413827726818109,
-      "trend_confidence": 0.3968086222742783
+      "trend_strength": 0.44158550740094726,
+      "trend_confidence": 0.4624466053142936
     },
     {
       "symbol": "META",
       "trend_direction": "NEUTRAL",
       "trend_value": 0,
-      "trend_strength": 0.45370093055270866,
-      "trend_confidence": 0.5892815065412276
+      "trend_strength": 0.45274026523224253,
+      "trend_confidence": 0.5242989270464591
     },
     {
       "symbol": "TSLA",
       "trend_direction": "NEUTRAL",
       "trend_value": 0,
-      "trend_strength": 0.4378013565886211,
-      "trend_confidence": 0.5231449286177683
+      "trend_strength": 0.44319542390168726,
+      "trend_confidence": 0.5242688104168247
     },
     {
       "symbol": "AMD",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.7529604708165274,
-      "trend_confidence": 0.4975454181061629
+      "trend_strength": 0.7427969635951903,
+      "trend_confidence": 0.535176821999988
     },
     {
       "symbol": "CRM",
       "trend_direction": "DOWN",
       "trend_value": -1,
-      "trend_strength": 0.4971343208194645,
-      "trend_confidence": 0.6945872467488561
+      "trend_strength": 0.4276709310999909,
+      "trend_confidence": 0.812895397890923
     },
     {
       "symbol": "ADBE",
       "trend_direction": "STRONG_DOWN",
       "trend_value": -2,
-      "trend_strength": 0.7053244555394738,
-      "trend_confidence": 0.7537657053453812
+      "trend_strength": 0.724493565801184,
+      "trend_confidence": 0.8769228329216447
     },
     {
       "symbol": "JPM",
-      "trend_direction": "NEUTRAL",
-      "trend_value": 0,
-      "trend_strength": 0.4793766695519448,
-      "trend_confidence": 0.49575680809138273
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.46424122742033025,
+      "trend_confidence": 0.5404376606309658
     },
     {
       "symbol": "BAC",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.5705707905871137,
-      "trend_confidence": 0.4357854728601471
+      "trend_strength": 0.5554169955350821,
+      "trend_confidence": 0.4613092791331568
     },
     {
       "symbol": "GS",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.47517875726007475,
-      "trend_confidence": 0.5208130836547087
+      "trend_strength": 0.4739152562854595,
+      "trend_confidence": 0.5562871399013771
     },
     {
       "symbol": "MS",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.46561908080944603,
-      "trend_confidence": 0.5814990641795545
+      "trend_strength": 0.4715387114737255,
+      "trend_confidence": 0.6146444951591652
     },
     {
       "symbol": "V",
       "trend_direction": "NEUTRAL",
       "trend_value": 0,
-      "trend_strength": 0.21809246428918003,
-      "trend_confidence": 0.4822247637795681
+      "trend_strength": 0.2014952843713159,
+      "trend_confidence": 0.5015282446808729
     },
     {
       "symbol": "MA",
       "trend_direction": "NEUTRAL",
       "trend_value": 0,
-      "trend_strength": 0.3550141627124922,
-      "trend_confidence": 0.5294688233378073
+      "trend_strength": 0.3426135140611106,
+      "trend_confidence": 0.5361996894274992
     },
     {
       "symbol": "AXP",
       "trend_direction": "DOWN",
       "trend_value": -1,
-      "trend_strength": 0.5381285456956756,
-      "trend_confidence": 0.6000445541244641
+      "trend_strength": 0.5389517107009056,
+      "trend_confidence": 0.5759371459969207
     },
     {
       "symbol": "BLK",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.31728162159579953,
-      "trend_confidence": 0.5600354046185443
+      "trend_strength": 0.3270257717904576,
+      "trend_confidence": 0.6450695096716366
     },
     {
       "symbol": "C",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.5574030540442937,
-      "trend_confidence": 0.6659367919559647
+      "trend_strength": 0.5327333093057955,
+      "trend_confidence": 0.6191395740363188
     },
     {
       "symbol": "WFC",
       "trend_direction": "NEUTRAL",
       "trend_value": 0,
-      "trend_strength": 0.5181277418433725,
-      "trend_confidence": 0.39918058972518367
+      "trend_strength": 0.511543268158909,
+      "trend_confidence": 0.4164500069518141
     },
     {
       "symbol": "UNH",
       "trend_direction": "NEUTRAL",
       "trend_value": 0,
-      "trend_strength": 0.4983121479651157,
-      "trend_confidence": 0.712973740969586
+      "trend_strength": 0.5379828540672458,
+      "trend_confidence": 0.7024516153029365
     },
     {
       "symbol": "JNJ",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.4938860841999335,
-      "trend_confidence": 0.8953949286564142
+      "trend_strength": 0.5051982298059267,
+      "trend_confidence": 0.9542686796009467
     },
     {
       "symbol": "PFE",
-      "trend_direction": "STRONG_UP",
-      "trend_value": 2,
-      "trend_strength": 0.49177442033147256,
-      "trend_confidence": 0.8857142148738448
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.4654018154987837,
+      "trend_confidence": 0.6685957318015872
     },
     {
       "symbol": "ABBV",
       "trend_direction": "NEUTRAL",
       "trend_value": 0,
-      "trend_strength": 0.4226155770317066,
-      "trend_confidence": 0.5537872381940891
+      "trend_strength": 0.4259383085607318,
+      "trend_confidence": 0.5004018440893085
     },
     {
       "symbol": "MRK",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.48674675895370845,
-      "trend_confidence": 0.6580048344531898
+      "trend_strength": 0.5129573194076935,
+      "trend_confidence": 0.7430652144466456
     },
     {
       "symbol": "LLY",
       "trend_direction": "NEUTRAL",
       "trend_value": 0,
-      "trend_strength": 0.3933618692194002,
-      "trend_confidence": 0.3449723626510054
+      "trend_strength": 0.41301066440292716,
+      "trend_confidence": 0.4782709944898146
     },
     {
       "symbol": "TMO",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.5313107754550225,
-      "trend_confidence": 0.6207928204426607
+      "trend_strength": 0.5580100389046282,
+      "trend_confidence": 0.6280326667973086
     },
     {
       "symbol": "ABT",
       "trend_direction": "STRONG_DOWN",
       "trend_value": -2,
-      "trend_strength": 0.5423382803124553,
-      "trend_confidence": 0.6852140507708921
+      "trend_strength": 0.5448266033324682,
+      "trend_confidence": 0.7701406336048024
     },
     {
       "symbol": "BMY",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.5853952982629991,
-      "trend_confidence": 0.5944046169162212
+      "trend_strength": 0.6017731666121622,
+      "trend_confidence": 0.6521140133659082
     },
     {
       "symbol": "AMGN",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.4074891370747115,
-      "trend_confidence": 0.5385210929781766
+      "trend_strength": 0.5007155134233718,
+      "trend_confidence": 0.5712168117159393
     },
     {
       "symbol": "WMT",
-      "trend_direction": "UP",
-      "trend_value": 1,
-      "trend_strength": 0.521967260880785,
-      "trend_confidence": 0.7878553087069273
+      "trend_direction": "STRONG_UP",
+      "trend_value": 2,
+      "trend_strength": 0.5486787445058791,
+      "trend_confidence": 0.8526859184438067
     },
     {
       "symbol": "HD",
       "trend_direction": "NEUTRAL",
       "trend_value": 0,
-      "trend_strength": 0.223593746733162,
-      "trend_confidence": 0.5375422434272412
+      "trend_strength": 0.21301385691163918,
+      "trend_confidence": 0.65459816118319
     },
     {
       "symbol": "PG",
       "trend_direction": "NEUTRAL",
       "trend_value": 0,
-      "trend_strength": 0.443896064181602,
-      "trend_confidence": 0.6569740572239737
+      "trend_strength": 0.4547551674290792,
+      "trend_confidence": 0.7321254369075592
     },
     {
       "symbol": "KO",
-      "trend_direction": "UP",
-      "trend_value": 1,
-      "trend_strength": 0.30173453215361884,
-      "trend_confidence": 0.8125230516119224
+      "trend_direction": "STRONG_UP",
+      "trend_value": 2,
+      "trend_strength": 0.3235648360906462,
+      "trend_confidence": 0.8844614125290648
     },
     {
       "symbol": "PEP",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.32443958044192917,
-      "trend_confidence": 0.6820037000116024
+      "trend_strength": 0.36213411981685084,
+      "trend_confidence": 0.7051694030388183
     },
     {
       "symbol": "COST",
       "trend_direction": "NEUTRAL",
       "trend_value": 0,
-      "trend_strength": 0.34157081125607797,
-      "trend_confidence": 0.6002412400837054
+      "trend_strength": 0.3221870514558869,
+      "trend_confidence": 0.6925576263501578
     },
     {
       "symbol": "NKE",
       "trend_direction": "DOWN",
       "trend_value": -1,
-      "trend_strength": 0.2343164918933506,
-      "trend_confidence": 0.5449767236134471
+      "trend_strength": 0.25749737583360544,
+      "trend_confidence": 0.5618944799748591
     },
     {
       "symbol": "MCD",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.1998936741029193,
-      "trend_confidence": 0.5830573016646374
+      "trend_strength": 0.21756153620523566,
+      "trend_confidence": 0.6403450043933464
     },
     {
       "symbol": "SBUX",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.35701953000892306,
-      "trend_confidence": 0.7316079845978165
+      "trend_strength": 0.34634713725969213,
+      "trend_confidence": 0.7362231649762285
     },
     {
       "symbol": "TGT",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.2071181160740946,
-      "trend_confidence": 0.6020145184350629
+      "trend_strength": 0.22656050181330503,
+      "trend_confidence": 0.662598963042886
     },
     {
       "symbol": "XOM",
       "trend_direction": "STRONG_UP",
       "trend_value": 2,
-      "trend_strength": 0.8082784273589199,
-      "trend_confidence": 0.9254935226889864
+      "trend_strength": 0.8301510489209056,
+      "trend_confidence": 0.9905053896909353
     },
     {
       "symbol": "CVX",
-      "trend_direction": "UP",
-      "trend_value": 1,
-      "trend_strength": 0.436567247685385,
-      "trend_confidence": 0.9145704427902344
+      "trend_direction": "STRONG_UP",
+      "trend_value": 2,
+      "trend_strength": 0.4614683159748774,
+      "trend_confidence": 0.9540735620069192
     },
     {
       "symbol": "CAT",
       "trend_direction": "STRONG_UP",
       "trend_value": 2,
-      "trend_strength": 0.6482036395364064,
-      "trend_confidence": 0.8001961929511714
+      "trend_strength": 0.673729067971391,
+      "trend_confidence": 0.8600566028762018
     },
     {
       "symbol": "BA",
       "trend_direction": "NEUTRAL",
       "trend_value": 0,
-      "trend_strength": 0.3473262904895083,
-      "trend_confidence": 0.6011012168383532
+      "trend_strength": 0.22372736801239998,
+      "trend_confidence": 0.5333766588169401
     },
     {
       "symbol": "UNP",
       "trend_direction": "NEUTRAL",
       "trend_value": 0,
-      "trend_strength": 0.2883386212426746,
-      "trend_confidence": 0.3848589849350581
+      "trend_strength": 0.3141252687527809,
+      "trend_confidence": 0.5210997105017705
     },
     {
       "symbol": "HON",
-      "trend_direction": "NEUTRAL",
-      "trend_value": 0,
-      "trend_strength": 0.25262683039655,
-      "trend_confidence": 0.86576524289746
+      "trend_direction": "STRONG_UP",
+      "trend_value": 2,
+      "trend_strength": 0.24753003056430734,
+      "trend_confidence": 0.9049189443048193
     },
     {
       "symbol": "GE",
       "trend_direction": "NEUTRAL",
       "trend_value": 0,
-      "trend_strength": 0.4838503472186857,
-      "trend_confidence": 0.4861453641902827
+      "trend_strength": 0.46394362887246476,
+      "trend_confidence": 0.4606489196517957
     },
     {
       "symbol": "MMM",
       "trend_direction": "NEUTRAL",
       "trend_value": 0,
-      "trend_strength": 0.3584155710022627,
-      "trend_confidence": 0.6077413983601736
+      "trend_strength": 0.3503590962267435,
+      "trend_confidence": 0.5356753427881875
     },
     {
       "symbol": "UPS",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.6111254183030109,
-      "trend_confidence": 0.6630229658638584
+      "trend_strength": 0.6309814790222356,
+      "trend_confidence": 0.7303302485999505
     },
     {
       "symbol": "LMT",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.651647277275562,
-      "trend_confidence": 0.9038921469932306
+      "trend_strength": 0.6705024745878797,
+      "trend_confidence": 0.8933979417114806
     }
   ],
   "momentum": [
     {
       "symbol": "AAPL",
-      "momentum_score": 0.6386727430253896,
-      "rsi": 75.50542094778824
+      "momentum_score": 0.6214060897955243,
+      "rsi": 73.73149654308932
     },
     {
       "symbol": "MSFT",
-      "momentum_score": -0.5584477516011355,
-      "rsi": 25.927148225020858
+      "momentum_score": -0.582751778078589,
+      "rsi": 21.88111905516601
     },
     {
       "symbol": "GOOGL",
-      "momentum_score": 0.7768576415557285,
-      "rsi": 76.52357915067805
+      "momentum_score": 0.6776646515133826,
+      "rsi": 63.82497646072257
     },
     {
       "symbol": "AMZN",
-      "momentum_score": 0.3150230222275876,
-      "rsi": 58.91510233285849
+      "momentum_score": 0.012793870504996727,
+      "rsi": 48.01283760159435
     },
     {
       "symbol": "NVDA",
-      "momentum_score": 0.20246046629153147,
-      "rsi": 44.737188839390654
+      "momentum_score": -0.29610919361702076,
+      "rsi": 34.405127176630586
     },
     {
       "symbol": "META",
-      "momentum_score": 0.24564275633719865,
-      "rsi": 64.78062956389829
+      "momentum_score": 0.1980651145675789,
+      "rsi": 57.22834939649765
     },
     {
       "symbol": "TSLA",
-      "momentum_score": -0.004788901724017467,
-      "rsi": 39.93163424665639
+      "momentum_score": 0.006527015437399543,
+      "rsi": 40.085631611539824
     },
     {
       "symbol": "AMD",
-      "momentum_score": 0.5708357861256926,
-      "rsi": 56.42505144344713
+      "momentum_score": 0.4673033829257265,
+      "rsi": 51.1103383358094
     },
     {
       "symbol": "CRM",
-      "momentum_score": -0.5431072540969238,
-      "rsi": 17.188513390752988
+      "momentum_score": -0.5994699126941363,
+      "rsi": 10.87765096558843
     },
     {
       "symbol": "ADBE",
-      "momentum_score": -0.4290952108310717,
-      "rsi": 32.032971272001404
+      "momentum_score": -0.5730374063688741,
+      "rsi": 17.54425853308689
     },
     {
       "symbol": "JPM",
-      "momentum_score": -0.17918316949283272,
-      "rsi": 52.25378222083434
+      "momentum_score": 0.38586540894852545,
+      "rsi": 64.43302346286072
     },
     {
       "symbol": "BAC",
-      "momentum_score": 0.36564213175543103,
-      "rsi": 62.16737148904545
+      "momentum_score": 0.47130899042493773,
+      "rsi": 66.04821810884715
     },
     {
       "symbol": "GS",
-      "momentum_score": 0.0649600590114659,
-      "rsi": 56.117206896168796
+      "momentum_score": 0.027648866630776828,
+      "rsi": 50.77747028166319
     },
     {
       "symbol": "MS",
-      "momentum_score": 0.10342214685939144,
-      "rsi": 60.41971039786487
+      "momentum_score": 0.04061694228333864,
+      "rsi": 51.72192356412603
     },
     {
       "symbol": "V",
-      "momentum_score": -0.05837347411000757,
-      "rsi": 54.87478964414035
+      "momentum_score": -0.00544564314175309,
+      "rsi": 47.4429684426515
     },
     {
       "symbol": "MA",
-      "momentum_score": 0.301503181750401,
-      "rsi": 63.382254307775504
+      "momentum_score": 0.2560516343060196,
+      "rsi": 58.35666284372079
     },
     {
       "symbol": "AXP",
-      "momentum_score": -0.13432681404719649,
-      "rsi": 36.8110205137598
+      "momentum_score": -0.17431432005796352,
+      "rsi": 32.97152849211038
     },
     {
       "symbol": "BLK",
-      "momentum_score": -0.1948669953845673,
-      "rsi": 51.1000111763453
+      "momentum_score": -0.3454863835885765,
+      "rsi": 31.427892906224514
     },
     {
       "symbol": "C",
-      "momentum_score": 0.04845223457210702,
-      "rsi": 53.5806937913982
+      "momentum_score": 0.1441449758369403,
+      "rsi": 62.42508720765645
     },
     {
       "symbol": "WFC",
-      "momentum_score": 0.4250050300818984,
-      "rsi": 63.844203391694585
+      "momentum_score": 0.43651083609340063,
+      "rsi": 64.0251498837642
     },
     {
       "symbol": "UNH",
-      "momentum_score": -0.27438043813566465,
-      "rsi": 26.243366453748678
+      "momentum_score": -0.31898137492433476,
+      "rsi": 25.66623328721984
     },
     {
       "symbol": "JNJ",
-      "momentum_score": 0.7153541589822849,
-      "rsi": 88.51850680230127
+      "momentum_score": 0.7217636311050497,
+      "rsi": 90.46255385493599
     },
     {
       "symbol": "PFE",
-      "momentum_score": 0.49466632194037374,
-      "rsi": 71.8116247797973
+      "momentum_score": 0.26136683052183096,
+      "rsi": 48.86811046299488
     },
     {
       "symbol": "ABBV",
-      "momentum_score": 0.43285401596436945,
-      "rsi": 63.84736854502712
+      "momentum_score": 0.4252267210619646,
+      "rsi": 63.89048161957579
     },
     {
       "symbol": "MRK",
-      "momentum_score": 0.314470737762106,
-      "rsi": 71.37884570727503
+      "momentum_score": 0.71697478386628,
+      "rsi": 77.14453387676721
     },
     {
       "symbol": "LLY",
-      "momentum_score": 0.07008365766793348,
-      "rsi": 46.78655850760886
+      "momentum_score": -0.08773584997755572,
+      "rsi": 31.6105590302751
     },
     {
       "symbol": "TMO",
-      "momentum_score": -0.14467091939665555,
-      "rsi": 28.342137258241493
+      "momentum_score": -0.1983536435475996,
+      "rsi": 23.466237852717967
     },
     {
       "symbol": "ABT",
-      "momentum_score": -0.4505007529281326,
-      "rsi": 33.34835781808229
+      "momentum_score": -0.4645332070527599,
+      "rsi": 32.170359973926764
     },
     {
       "symbol": "BMY",
-      "momentum_score": 0.08205932953194776,
-      "rsi": 60.57077133010777
+      "momentum_score": 0.08007948530745626,
+      "rsi": 61.48954902138413
     },
     {
       "symbol": "AMGN",
-      "momentum_score": 0.41156717446600005,
-      "rsi": 59.09593889213389
+      "momentum_score": 0.13037359010914443,
+      "rsi": 46.55773002988908
     },
     {
       "symbol": "WMT",
-      "momentum_score": 0.596622096189684,
-      "rsi": 80.43059949552917
+      "momentum_score": 0.6425461431256668,
+      "rsi": 85.89176146373089
     },
     {
       "symbol": "HD",
-      "momentum_score": -0.1821755062943358,
-      "rsi": 55.39237115260093
+      "momentum_score": -0.15152933424658535,
+      "rsi": 59.90710395875594
     },
     {
       "symbol": "PG",
-      "momentum_score": 0.3998436437645771,
-      "rsi": 75.4234690350454
+      "momentum_score": 0.4183022853737739,
+      "rsi": 79.67762407120775
     },
     {
       "symbol": "KO",
-      "momentum_score": 0.4745763880781869,
-      "rsi": 80.4485625621457
+      "momentum_score": 0.5059788243279942,
+      "rsi": 85.69941341246577
     },
     {
       "symbol": "PEP",
-      "momentum_score": 0.4974548394881607,
-      "rsi": 83.07088907823999
+      "momentum_score": 0.5838287972872439,
+      "rsi": 90.14991115275485
     },
     {
       "symbol": "COST",
-      "momentum_score": -0.11715301120032666,
-      "rsi": 60.586707958309404
+      "momentum_score": -0.03839895132542477,
+      "rsi": 65.09054001438005
     },
     {
       "symbol": "NKE",
-      "momentum_score": -0.43094307124396897,
-      "rsi": 36.516366323852544
+      "momentum_score": -0.4886505007172625,
+      "rsi": 29.049315439053686
     },
     {
       "symbol": "MCD",
-      "momentum_score": 0.41180618531696905,
-      "rsi": 73.65130291374066
+      "momentum_score": 0.41250547004513993,
+      "rsi": 75.30176543394508
     },
     {
       "symbol": "SBUX",
-      "momentum_score": -0.26818572028059134,
-      "rsi": 40.46153653764703
+      "momentum_score": -0.22317869410311364,
+      "rsi": 49.76724175171232
     },
     {
       "symbol": "TGT",
-      "momentum_score": 0.0063564240116987004,
-      "rsi": 64.64342695763463
+      "momentum_score": 0.025695158119905557,
+      "rsi": 68.75066549626385
     },
     {
       "symbol": "XOM",
-      "momentum_score": 0.5678354845023424,
-      "rsi": 68.30683636514327
+      "momentum_score": 0.6784612565073834,
+      "rsi": 78.61310485495588
     },
     {
       "symbol": "CVX",
-      "momentum_score": 0.46668826063334745,
-      "rsi": 72.07612283312177
+      "momentum_score": 0.5393726659820449,
+      "rsi": 78.66074580997636
     },
     {
       "symbol": "CAT",
-      "momentum_score": 0.7874451108733063,
-      "rsi": 75.93977915335225
+      "momentum_score": 0.7823487764045526,
+      "rsi": 78.84196579272182
     },
     {
       "symbol": "BA",
-      "momentum_score": -0.2924052824784377,
-      "rsi": 31.327555857545136
+      "momentum_score": -0.2924015187708135,
+      "rsi": 31.85197490377203
     },
     {
       "symbol": "UNP",
-      "momentum_score": 0.36795880184028984,
-      "rsi": 60.63601116692925
+      "momentum_score": 0.4328522120498563,
+      "rsi": 70.95645747295944
     },
     {
       "symbol": "HON",
-      "momentum_score": 0.44569983664926527,
-      "rsi": 73.19948173485659
+      "momentum_score": 0.4817260703382314,
+      "rsi": 77.48288743256585
     },
     {
       "symbol": "GE",
-      "momentum_score": -0.10570634150108003,
-      "rsi": 53.894209583891126
+      "momentum_score": -0.07300127668937016,
+      "rsi": 55.39860982333456
     },
     {
       "symbol": "MMM",
-      "momentum_score": -0.3101737155870227,
-      "rsi": 30.562247304887833
+      "momentum_score": -0.2608046988974201,
+      "rsi": 40.20269359689829
     },
     {
       "symbol": "UPS",
-      "momentum_score": 0.17824984484856254,
-      "rsi": 66.21970373734875
+      "momentum_score": 0.345255687811772,
+      "rsi": 70.53694918682072
     },
     {
       "symbol": "LMT",
-      "momentum_score": 0.8057991000736768,
-      "rsi": 85.52154507557208
+      "momentum_score": 0.7456556698221304,
+      "rsi": 76.05521122100534
     }
   ],
   "breakouts": [
@@ -618,197 +618,203 @@
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 25.426565740905446,
-      "distance_to_resistance": 0.029352059156381026,
-      "volume_trend": 0.3105832212000281
+      "breakout_potential": 30.54723684552903,
+      "distance_to_resistance": 0.03137653337553669,
+      "volume_trend": 0.32574803160100974
     },
     {
       "symbol": "MSFT",
-      "breakout_count": 1,
+      "breakout_count": 2,
       "breakout_types": [
+        "support",
         "volatility_expansion"
       ],
       "breakout_directions": [
+        -1,
         -1
       ],
-      "breakout_potential": 14.166877144117828,
-      "distance_to_resistance": 0.1643504828819287,
-      "volume_trend": 0.5666750857647131
+      "breakout_potential": 37.360642444291756,
+      "distance_to_resistance": 0.014260636709753511,
+      "volume_trend": 0.6370320648692052
     },
     {
       "symbol": "GOOGL",
-      "breakout_count": 1,
-      "breakout_types": [
-        "resistance"
-      ],
-      "breakout_directions": [
-        1
-      ],
-      "breakout_potential": 10.870172001055355,
-      "distance_to_resistance": 1.0,
-      "volume_trend": 0.052353978540964574
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 32.125875881295954,
+      "distance_to_resistance": 0.0022960725292650655,
+      "volume_trend": 0.05824885110650824
     },
     {
       "symbol": "AMZN",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 26.254140799122936,
-      "distance_to_resistance": 0.024613086772678906,
-      "volume_trend": 0.14831423049256598
+      "breakout_potential": 20.634504249156386,
+      "distance_to_resistance": 0.043248711488534486,
+      "volume_trend": 0.12007805878803324
     },
     {
       "symbol": "NVDA",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 26.702177693255344,
-      "distance_to_resistance": 0.021709892196976086,
-      "volume_trend": 0.013919307170362716
+      "breakout_potential": 12.342821731286763,
+      "distance_to_resistance": 0.051566915632893534,
+      "volume_trend": 0.009382025580405795
     },
     {
       "symbol": "META",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 30.02630422293031,
-      "distance_to_resistance": 0.0034477361917057297,
-      "volume_trend": 0.23552953083426975
+      "breakout_potential": 25.91222100423075,
+      "distance_to_resistance": 0.024787445229884564,
+      "volume_trend": 0.2843632924680757
     },
     {
       "symbol": "TSLA",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 23.435579450018395,
-      "distance_to_resistance": 0.07259191411871187,
-      "volume_trend": -0.1716590982992361
+      "breakout_potential": 23.635740543855746,
+      "distance_to_resistance": 0.07221064043449002,
+      "volume_trend": -0.19539448974660867
     },
     {
       "symbol": "AMD",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 15.084752339020202,
-      "distance_to_resistance": 0.07950619774573234,
-      "volume_trend": 0.3984520710181314
+      "breakout_potential": 15.056255096339127,
+      "distance_to_resistance": 0.09805458370488718,
+      "volume_trend": 0.39916860751935546
     },
     {
       "symbol": "CRM",
-      "breakout_count": 0,
-      "breakout_types": [],
-      "breakout_directions": [],
-      "breakout_potential": 16.3022850613431,
-      "distance_to_resistance": 0.188324282595417,
-      "volume_trend": 0.2839174514735421
+      "breakout_count": 1,
+      "breakout_types": [
+        "support"
+      ],
+      "breakout_directions": [
+        -1
+      ],
+      "breakout_potential": 15.163864436162264,
+      "distance_to_resistance": 0.20042774025715698,
+      "volume_trend": 0.4632384658472004
     },
     {
       "symbol": "ADBE",
-      "breakout_count": 0,
-      "breakout_types": [],
-      "breakout_directions": [],
-      "breakout_potential": 35.641500589964934,
-      "distance_to_resistance": 0.04403838944415111,
-      "volume_trend": 0.08780286503142887
+      "breakout_count": 1,
+      "breakout_types": [
+        "support"
+      ],
+      "breakout_directions": [
+        -1
+      ],
+      "breakout_potential": 19.56998646518142,
+      "distance_to_resistance": 0.12639280713020287,
+      "volume_trend": 0.1816472928595001
     },
     {
       "symbol": "JPM",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 37.55069221548618,
-      "distance_to_resistance": 0.023962697955250436,
-      "volume_trend": 0.23375497509159437
+      "breakout_potential": 40.62007283657067,
+      "distance_to_resistance": 0.0021403037344940473,
+      "volume_trend": 0.2261815439307706
     },
     {
       "symbol": "BAC",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 41.33793751114797,
-      "distance_to_resistance": 0.0006300830912885163,
-      "volume_trend": 0.1309555128088813
+      "breakout_potential": 23.10799428169814,
+      "distance_to_resistance": 0.056932937202657664,
+      "volume_trend": 0.14050787901691142
     },
     {
       "symbol": "GS",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 35.75419767149876,
-      "distance_to_resistance": 0.016231108676862605,
-      "volume_trend": 0.12356974735726967
+      "breakout_potential": 32.62420151354051,
+      "distance_to_resistance": 0.024174924592503113,
+      "volume_trend": 0.09226430369176164
     },
     {
       "symbol": "MS",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 44.56395398262154,
-      "distance_to_resistance": 0.01450463259173319,
-      "volume_trend": 0.3629277770744863
+      "breakout_potential": 37.97976565718289,
+      "distance_to_resistance": 0.0266514128536708,
+      "volume_trend": 0.3980944272984639
     },
     {
       "symbol": "V",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 35.458861018620084,
-      "distance_to_resistance": 0.05968927314508213,
-      "volume_trend": 0.3926545207985621
+      "breakout_potential": 31.811554592112785,
+      "distance_to_resistance": 0.07550744845495291,
+      "volume_trend": 0.3789730347697031
     },
     {
       "symbol": "MA",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 37.08095683885977,
-      "distance_to_resistance": 0.04645527842840634,
-      "volume_trend": 0.6527843199841923
+      "breakout_potential": 34.86875112711694,
+      "distance_to_resistance": 0.05529105532814615,
+      "volume_trend": 0.6418051574355781
     },
     {
       "symbol": "AXP",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 18.986920323149285,
-      "distance_to_resistance": 0.078855136607901,
-      "volume_trend": 0.26834331542814005
+      "breakout_potential": 16.58209892152024,
+      "distance_to_resistance": 0.08872933686103678,
+      "volume_trend": 0.270892461894336
     },
     {
       "symbol": "BLK",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 45.45657411118967,
-      "distance_to_resistance": 0.013532078667745896,
-      "volume_trend": 0.3600075382295931
+      "breakout_potential": 24.082289762106363,
+      "distance_to_resistance": 0.06049210782834673,
+      "volume_trend": 0.3724359998922482
     },
     {
       "symbol": "C",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 26.981384188316117,
-      "distance_to_resistance": 0.0625913592563825,
-      "volume_trend": 0.040205820661178615
+      "breakout_potential": 27.754011147890466,
+      "distance_to_resistance": 0.04379049578662093,
+      "volume_trend": 0.015208587758891667
     },
     {
       "symbol": "WFC",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 29.259306746723848,
-      "distance_to_resistance": 0.04914927741519709,
-      "volume_trend": 0.3592873323820136
+      "breakout_potential": 27.774271933867123,
+      "distance_to_resistance": 0.04869464700970043,
+      "volume_trend": 0.36098351249245786
     },
     {
       "symbol": "UNH",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 27.441950134199708,
-      "distance_to_resistance": 0.08792979052608667,
-      "volume_trend": 0.9769759106288549
+      "breakout_potential": 25.22631459241837,
+      "distance_to_resistance": 0.0933277250334247,
+      "volume_trend": 0.9423298340309816
     },
     {
       "symbol": "JNJ",
@@ -819,27 +825,27 @@
       "breakout_directions": [
         1
       ],
-      "breakout_potential": 5.595085217016798,
+      "breakout_potential": 5.258181186699501,
       "distance_to_resistance": 1.0,
-      "volume_trend": 0.22380340868067194
+      "volume_trend": 0.21032724746798004
     },
     {
       "symbol": "PFE",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 26.817385015699962,
-      "distance_to_resistance": 0.0038467965178115987,
-      "volume_trend": 0.07152092033284596
+      "breakout_potential": 17.597358077227902,
+      "distance_to_resistance": 0.03982449386317979,
+      "volume_trend": 0.10213926172091403
     },
     {
       "symbol": "ABBV",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 26.397661299848316,
-      "distance_to_resistance": 0.041274495613995765,
-      "volume_trend": 0.4000957197413695
+      "breakout_potential": 29.074837682964255,
+      "distance_to_resistance": 0.04118218887651969,
+      "volume_trend": 0.2981739902392422
     },
     {
       "symbol": "MRK",
@@ -850,54 +856,64 @@
       "breakout_directions": [
         1
       ],
-      "breakout_potential": 11.004273330105512,
+      "breakout_potential": 0.7232265834571594,
       "distance_to_resistance": 1.0,
-      "volume_trend": -0.0984031469657407
+      "volume_trend": -0.040512294346926714
     },
     {
       "symbol": "LLY",
-      "breakout_count": 0,
-      "breakout_types": [],
-      "breakout_directions": [],
-      "breakout_potential": 16.26884223888736,
-      "distance_to_resistance": 0.06066770460277549,
-      "volume_trend": 0.00994357192920381
+      "breakout_count": 2,
+      "breakout_types": [
+        "support",
+        "range_expansion"
+      ],
+      "breakout_directions": [
+        -1,
+        -1
+      ],
+      "breakout_potential": 4.338918393436875,
+      "distance_to_resistance": 0.10365630053582305,
+      "volume_trend": 0.013069097901694748
     },
     {
       "symbol": "TMO",
-      "breakout_count": 0,
-      "breakout_types": [],
-      "breakout_directions": [],
-      "breakout_potential": 37.01267060618861,
-      "distance_to_resistance": 0.03128185208398046,
-      "volume_trend": 0.7460729005204847
+      "breakout_count": 1,
+      "breakout_types": [
+        "support"
+      ],
+      "breakout_directions": [
+        -1
+      ],
+      "breakout_potential": 39.01557535409869,
+      "distance_to_resistance": 0.01353375420584394,
+      "volume_trend": 0.695960556222387
     },
     {
       "symbol": "ABT",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 27.883975689425288,
-      "distance_to_resistance": 0.2169881495050704,
-      "volume_trend": 1.1153590275770116
+      "breakout_potential": 27.81902531585363,
+      "distance_to_resistance": 0.22134179044264124,
+      "volume_trend": 1.1127610126341452
     },
     {
       "symbol": "BMY",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 33.33758075099936,
-      "distance_to_resistance": 0.02057615921341201,
-      "volume_trend": -0.16253089143289778
+      "breakout_potential": 31.667512506455534,
+      "distance_to_resistance": 0.018753334623748837,
+      "volume_trend": -0.18132577438862008
     },
     {
       "symbol": "AMGN",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 0.0,
-      "distance_to_resistance": 1.0,
-      "volume_trend": -0.024069116238541355
+      "breakout_potential": 20.0623991979823,
+      "distance_to_resistance": 0.023413864545709026,
+      "volume_trend": -0.009027065857244776
     },
     {
       "symbol": "WMT",
@@ -908,18 +924,18 @@
       "breakout_directions": [
         1
       ],
-      "breakout_potential": 39.941489423279435,
+      "breakout_potential": 35.61720988406666,
       "distance_to_resistance": 1.0,
-      "volume_trend": 1.3605636327919606
+      "volume_trend": 1.4246883953626663
     },
     {
       "symbol": "HD",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 34.97127621227407,
-      "distance_to_resistance": 0.01206666751971186,
-      "volume_trend": -0.02896632034255653
+      "breakout_potential": 35.90144789327401,
+      "distance_to_resistance": 0.004152730796303505,
+      "volume_trend": -0.00012194839703705274
     },
     {
       "symbol": "PG",
@@ -930,9 +946,9 @@
       "breakout_directions": [
         1
       ],
-      "breakout_potential": 22.236360311415943,
-      "distance_to_resistance": 0.03225668094878469,
-      "volume_trend": 0.15227720350765495
+      "breakout_potential": 24.396651419920353,
+      "distance_to_resistance": 0.018100653194144528,
+      "volume_trend": 0.15687258873825938
     },
     {
       "symbol": "KO",
@@ -943,9 +959,9 @@
       "breakout_directions": [
         1
       ],
-      "breakout_potential": 4.933437052407596,
+      "breakout_potential": 4.728131540425595,
       "distance_to_resistance": 1.0,
-      "volume_trend": 0.19733748209630386
+      "volume_trend": 0.1891252616170238
     },
     {
       "symbol": "PEP",
@@ -956,34 +972,61 @@
       "breakout_directions": [
         1
       ],
-      "breakout_potential": 3.6970881673171974,
+      "breakout_potential": 3.0505502856085442,
       "distance_to_resistance": 1.0,
-      "volume_trend": 0.09217301013594614
+      "volume_trend": 0.12202201142434177
     },
     {
       "symbol": "COST",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 33.59665280548289,
-      "distance_to_resistance": 0.01824123166608395,
-      "volume_trend": -0.06259276915481804
+      "breakout_potential": 35.452794010200556,
+      "distance_to_resistance": 0.0082870467168862,
+      "volume_trend": -0.0663845925646247
     },
     {
       "symbol": "NKE",
       "breakout_count": 1,
       "breakout_types": [
-        "range_expansion"
+        "support"
       ],
       "breakout_directions": [
         -1
       ],
-      "breakout_potential": 41.67673062986817,
-      "distance_to_resistance": 0.006787678986289169,
-      "volume_trend": -0.38447135504039975
+      "breakout_potential": 34.443876277119486,
+      "distance_to_resistance": 0.027442275940656128,
+      "volume_trend": -0.41468987649428113
     },
     {
       "symbol": "MCD",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 4.641398175531883,
+      "distance_to_resistance": 1.0,
+      "volume_trend": -0.042335590378940524
+    },
+    {
+      "symbol": "SBUX",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 29.5726519441993,
+      "distance_to_resistance": 0.011125916536557949,
+      "volume_trend": 0.2941652431335515
+    },
+    {
+      "symbol": "TGT",
+      "breakout_count": 0,
+      "breakout_types": [],
+      "breakout_directions": [],
+      "breakout_potential": 32.047838767284496,
+      "distance_to_resistance": 0.005031424467556703,
+      "volume_trend": -0.10977587214031403
+    },
+    {
+      "symbol": "XOM",
       "breakout_count": 1,
       "breakout_types": [
         "resistance"
@@ -991,45 +1034,22 @@
       "breakout_directions": [
         1
       ],
-      "breakout_potential": 10.998494247767301,
+      "breakout_potential": 10.143843639116852,
       "distance_to_resistance": 1.0,
-      "volume_trend": -0.009279006580945048
-    },
-    {
-      "symbol": "SBUX",
-      "breakout_count": 0,
-      "breakout_types": [],
-      "breakout_directions": [],
-      "breakout_potential": 26.48159904341263,
-      "distance_to_resistance": 0.0260132369436105,
-      "volume_trend": 0.31939633117261024
-    },
-    {
-      "symbol": "TGT",
-      "breakout_count": 0,
-      "breakout_types": [],
-      "breakout_directions": [],
-      "breakout_potential": 31.166057640074783,
-      "distance_to_resistance": 0.021272727627338377,
-      "volume_trend": -0.1264403706324131
-    },
-    {
-      "symbol": "XOM",
-      "breakout_count": 0,
-      "breakout_types": [],
-      "breakout_directions": [],
-      "breakout_potential": 12.46359497025008,
-      "distance_to_resistance": 1.0,
-      "volume_trend": 0.2611283847814989
+      "volume_trend": 0.22928225863036755
     },
     {
       "symbol": "CVX",
-      "breakout_count": 0,
-      "breakout_types": [],
-      "breakout_directions": [],
-      "breakout_potential": 21.92836811339115,
+      "breakout_count": 1,
+      "breakout_types": [
+        "resistance"
+      ],
+      "breakout_directions": [
+        1
+      ],
+      "breakout_potential": 17.19004262294576,
       "distance_to_resistance": 1.0,
-      "volume_trend": 0.42222278262996027
+      "volume_trend": 0.277773748165298
     },
     {
       "symbol": "CAT",
@@ -1040,472 +1060,482 @@
       "breakout_directions": [
         1
       ],
-      "breakout_potential": 6.41217808343488,
+      "breakout_potential": 0.0,
       "distance_to_resistance": 1.0,
-      "volume_trend": 0.027348800602805312
+      "volume_trend": -0.0011048338922964307
     },
     {
       "symbol": "BA",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 35.16661408942972,
-      "distance_to_resistance": 0.020384499606088558,
-      "volume_trend": 0.2045715172343079
+      "breakout_potential": 33.99821348700759,
+      "distance_to_resistance": 0.019815598036560623,
+      "volume_trend": 0.18889195809804504
     },
     {
       "symbol": "UNP",
-      "breakout_count": 0,
-      "breakout_types": [],
-      "breakout_directions": [],
-      "breakout_potential": 32.4531885944242,
-      "distance_to_resistance": 0.008321055226566995,
-      "volume_trend": 0.3813380960426378
+      "breakout_count": 2,
+      "breakout_types": [
+        "resistance",
+        "range_expansion"
+      ],
+      "breakout_directions": [
+        1,
+        1
+      ],
+      "breakout_potential": 29.684047687738598,
+      "distance_to_resistance": 0.022925019067898848,
+      "volume_trend": 0.4166120981885324
     },
     {
       "symbol": "HON",
-      "breakout_count": 0,
-      "breakout_types": [],
-      "breakout_directions": [],
-      "breakout_potential": 22.102377128808286,
+      "breakout_count": 1,
+      "breakout_types": [
+        "resistance"
+      ],
+      "breakout_directions": [
+        1
+      ],
+      "breakout_potential": 21.773232221204722,
       "distance_to_resistance": 1.0,
-      "volume_trend": 0.44824464814014564
+      "volume_trend": 0.46330481616578534
     },
     {
       "symbol": "GE",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 31.477449067422008,
-      "distance_to_resistance": 0.01990524660986815,
-      "volume_trend": 0.3547897338330541
+      "breakout_potential": 29.699360174702548,
+      "distance_to_resistance": 0.015890515298700045,
+      "volume_trend": 0.34687955997510245
     },
     {
       "symbol": "MMM",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 38.384090368760006,
-      "distance_to_resistance": 0.04141314015554507,
-      "volume_trend": 0.8865245761613467
+      "breakout_potential": 49.33854488701991,
+      "distance_to_resistance": 0.026361899609740648,
+      "volume_trend": 0.9235043595260282
     },
     {
       "symbol": "UPS",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 17.475411569410756,
-      "distance_to_resistance": 0.06466999540834811,
-      "volume_trend": 0.15211128903700022
+      "breakout_potential": 17.44912908691458,
+      "distance_to_resistance": 0.049630383739480866,
+      "volume_trend": 0.14542459045584044
     },
     {
       "symbol": "LMT",
       "breakout_count": 0,
       "breakout_types": [],
       "breakout_directions": [],
-      "breakout_potential": 28.50398263077461,
+      "breakout_potential": 26.79431103605063,
       "distance_to_resistance": 1.0,
-      "volume_trend": 0.7524420306513411
+      "volume_trend": 0.6683948650742508
     }
   ],
   "alpha_rankings": [
     {
       "symbol": "GOOGL",
-      "composite_score": 1.1080896913360867,
-      "factor_momentum_6_1": 0.2357020747226474,
-      "factor_ivol": -0.014084136455430031,
+      "composite_score": 1.1493950253214575,
+      "factor_momentum_6_1": 0.2430345209637788,
+      "factor_ivol": -0.013155515899487283,
       "rank": 1.0,
       "percentile": 100.0
     },
     {
       "symbol": "JNJ",
-      "composite_score": 0.9237714499673034,
-      "factor_momentum_6_1": 0.0607015649781139,
-      "factor_ivol": 0.1240527250153468,
+      "composite_score": 0.845859143408952,
+      "factor_momentum_6_1": 0.04457068596905345,
+      "factor_ivol": 0.12460114271273695,
       "rank": 2.0,
       "percentile": 98.0
     },
     {
-      "symbol": "MRK",
-      "composite_score": 0.6925639476381265,
-      "factor_momentum_6_1": 0.13822640619315577,
-      "factor_ivol": 0.0002863833344695379,
+      "symbol": "CAT",
+      "composite_score": 0.7434546458989123,
+      "factor_momentum_6_1": 0.16911972644847983,
+      "factor_ivol": -0.020428797268697358,
       "rank": 3.0,
       "percentile": 96.0
     },
     {
-      "symbol": "CAT",
-      "composite_score": 0.6678100465661525,
-      "factor_momentum_6_1": 0.15395735458190207,
-      "factor_ivol": -0.020395345268671577,
+      "symbol": "MRK",
+      "composite_score": 0.7191325390680906,
+      "factor_momentum_6_1": 0.12850901782593938,
+      "factor_ivol": 0.015317489987678762,
       "rank": 4.0,
       "percentile": 94.0
     },
     {
-      "symbol": "AAPL",
-      "composite_score": 0.5488952233206353,
-      "factor_momentum_6_1": 0.12491455589701453,
-      "factor_ivol": -0.015135511232887464,
+      "symbol": "C",
+      "composite_score": 0.585164368244591,
+      "factor_momentum_6_1": 0.12898180556635555,
+      "factor_ivol": -0.011948931917437351,
       "rank": 5.0,
       "percentile": 92.0
     },
     {
-      "symbol": "BAC",
-      "composite_score": 0.5062791979137632,
-      "factor_momentum_6_1": 0.06341626211811645,
-      "factor_ivol": 0.03783957746463619,
+      "symbol": "MS",
+      "composite_score": 0.5734478987633055,
+      "factor_momentum_6_1": 0.11762869050455303,
+      "factor_ivol": -0.0029391107518919124,
       "rank": 6.0,
       "percentile": 90.0
     },
     {
-      "symbol": "MS",
-      "composite_score": 0.4863527702175178,
-      "factor_momentum_6_1": 0.10026737918243885,
-      "factor_ivol": -0.0029968251389352815,
+      "symbol": "BAC",
+      "composite_score": 0.5602775901070556,
+      "factor_momentum_6_1": 0.07371246564243895,
+      "factor_ivol": 0.038343052378972176,
       "rank": 7.0,
       "percentile": 88.0
     },
     {
-      "symbol": "XOM",
-      "composite_score": 0.447810898654699,
-      "factor_momentum_6_1": 0.02099232100399956,
-      "factor_ivol": 0.06856985872694024,
+      "symbol": "GS",
+      "composite_score": 0.517611449493196,
+      "factor_momentum_6_1": 0.11351274076762459,
+      "factor_ivol": -0.009990450868985366,
       "rank": 8.0,
       "percentile": 86.0
     },
     {
-      "symbol": "C",
-      "composite_score": 0.44574608066203925,
-      "factor_momentum_6_1": 0.10157057155045562,
-      "factor_ivol": -0.012421355418047772,
+      "symbol": "XOM",
+      "composite_score": 0.49171381963131017,
+      "factor_momentum_6_1": 0.03098737768961639,
+      "factor_ivol": 0.06735538623664565,
       "rank": 9.0,
       "percentile": 84.0
     },
     {
-      "symbol": "LMT",
-      "composite_score": 0.41560207981901426,
-      "factor_momentum_6_1": 0.03766151822135334,
-      "factor_ivol": 0.04545889774244952,
+      "symbol": "AAPL",
+      "composite_score": 0.4691127051436145,
+      "factor_momentum_6_1": 0.10795108566213751,
+      "factor_ivol": -0.014128544633414617,
       "rank": 10.0,
       "percentile": 82.0
     },
     {
-      "symbol": "WFC",
-      "composite_score": 0.412403618836749,
-      "factor_momentum_6_1": 0.06785676633079749,
-      "factor_ivol": 0.014623957436552319,
+      "symbol": "LMT",
+      "composite_score": 0.44871698632746954,
+      "factor_momentum_6_1": 0.04420679115527329,
+      "factor_ivol": 0.045536606110220625,
       "rank": 11.0,
       "percentile": 80.0
     },
     {
-      "symbol": "GS",
-      "composite_score": 0.3835730817783632,
-      "factor_momentum_6_1": 0.08687462664803151,
-      "factor_ivol": -0.010160010292358874,
+      "symbol": "TMO",
+      "composite_score": 0.4413170847630436,
+      "factor_momentum_6_1": 0.10363384634919284,
+      "factor_ivol": -0.015370429396584116,
       "rank": 12.0,
       "percentile": 78.0
     },
     {
-      "symbol": "ABBV",
-      "composite_score": 0.37385987402626847,
-      "factor_momentum_6_1": 0.025960183421573624,
-      "factor_ivol": 0.04881179138368008,
+      "symbol": "WFC",
+      "composite_score": 0.4101126018367663,
+      "factor_momentum_6_1": 0.06654436429094557,
+      "factor_ivol": 0.015478156076407687,
       "rank": 13.0,
       "percentile": 76.0
     },
     {
-      "symbol": "UPS",
-      "composite_score": 0.3554790277107073,
-      "factor_momentum_6_1": 0.06234885961253661,
-      "factor_ivol": 0.008746945929604844,
+      "symbol": "AXP",
+      "composite_score": 0.3718534965490607,
+      "factor_momentum_6_1": 0.08812342082672607,
+      "factor_ivol": -0.013752721516913924,
       "rank": 14.0,
       "percentile": 74.0
     },
     {
-      "symbol": "TMO",
-      "composite_score": 0.35404444739654606,
-      "factor_momentum_6_1": 0.08665490939858848,
-      "factor_ivol": -0.015846019919279274,
+      "symbol": "JPM",
+      "composite_score": 0.30830951081451063,
+      "factor_momentum_6_1": 0.008349139534434204,
+      "factor_ivol": 0.05331276262846793,
       "rank": 15.0,
       "percentile": 72.0
     },
     {
-      "symbol": "KO",
-      "composite_score": 0.34791004198109754,
-      "factor_momentum_6_1": -0.06691571083388585,
-      "factor_ivol": 0.13649771923010537,
+      "symbol": "MCD",
+      "composite_score": 0.2948301829415096,
+      "factor_momentum_6_1": -0.07273168062068518,
+      "factor_ivol": 0.1316977172089871,
       "rank": 16.0,
       "percentile": 70.0
     },
     {
-      "symbol": "LLY",
-      "composite_score": 0.3299126967754025,
-      "factor_momentum_6_1": 0.16980115065970858,
-      "factor_ivol": -0.10381861130462806,
+      "symbol": "UPS",
+      "composite_score": 0.2826079992317501,
+      "factor_momentum_6_1": 0.04774644510631257,
+      "factor_ivol": 0.008775154740037462,
       "rank": 17.0,
       "percentile": 68.0
     },
     {
-      "symbol": "BMY",
-      "composite_score": 0.3181057006798009,
-      "factor_momentum_6_1": 0.047980008904522795,
-      "factor_ivol": 0.015641131231437393,
+      "symbol": "WMT",
+      "composite_score": 0.272886905116074,
+      "factor_momentum_6_1": 0.0011564456395284721,
+      "factor_ivol": 0.053420935383686335,
       "rank": 18.0,
       "percentile": 66.0
     },
     {
-      "symbol": "AXP",
-      "composite_score": 0.3100828184712626,
-      "factor_momentum_6_1": 0.07594405025787561,
-      "factor_ivol": -0.01392748656362308,
+      "symbol": "KO",
+      "composite_score": 0.26912469866070776,
+      "factor_momentum_6_1": -0.08280246957625531,
+      "factor_ivol": 0.13662740930839687,
       "rank": 19.0,
       "percentile": 64.0
     },
     {
-      "symbol": "WMT",
-      "composite_score": 0.29940813189632404,
-      "factor_momentum_6_1": 0.005434540740043029,
-      "factor_ivol": 0.054447085639221786,
+      "symbol": "BMY",
+      "composite_score": 0.227461625263568,
+      "factor_momentum_6_1": 0.029122233602505328,
+      "factor_ivol": 0.016370091450208277,
       "rank": 20.0,
       "percentile": 62.0
     },
     {
-      "symbol": "MCD",
-      "composite_score": 0.2953405087537277,
-      "factor_momentum_6_1": -0.07210552507285055,
-      "factor_ivol": 0.1311736268235961,
+      "symbol": "ABBV",
+      "composite_score": 0.18379746830736707,
+      "factor_momentum_6_1": -0.012473935472612283,
+      "factor_ivol": 0.049233429134085696,
       "rank": 21.0,
       "percentile": 60.0
     },
     {
       "symbol": "UNP",
-      "composite_score": 0.22315043171525792,
-      "factor_momentum_6_1": -0.0428636057071598,
-      "factor_ivol": 0.08749369205021139,
+      "composite_score": 0.17918761914506937,
+      "factor_momentum_6_1": -0.05042702797236403,
+      "factor_ivol": 0.0862645518013779,
       "rank": 22.0,
       "percentile": 57.99999999999999
     },
     {
-      "symbol": "JPM",
-      "composite_score": 0.21871092775854326,
-      "factor_momentum_6_1": -0.01006338425109786,
-      "factor_ivol": 0.05380556980280651,
+      "symbol": "CVX",
+      "composite_score": 0.17054833743684966,
+      "factor_momentum_6_1": -0.025702937298787306,
+      "factor_ivol": 0.05981260478615724,
       "rank": 23.0,
       "percentile": 56.00000000000001
     },
     {
-      "symbol": "PEP",
-      "composite_score": 0.16336934154445484,
-      "factor_momentum_6_1": -0.053623113566941986,
-      "factor_ivol": 0.08629698187583296,
+      "symbol": "LLY",
+      "composite_score": 0.14608665688589081,
+      "factor_momentum_6_1": 0.13460272431726653,
+      "factor_ivol": -0.10538539294008836,
       "rank": 24.0,
       "percentile": 54.0
     },
     {
-      "symbol": "PFE",
-      "composite_score": 0.1275357496427281,
-      "factor_momentum_6_1": -0.023622481195713682,
-      "factor_ivol": 0.049129631124259304,
+      "symbol": "GE",
+      "composite_score": 0.13563700321187772,
+      "factor_momentum_6_1": 0.03364862390284733,
+      "factor_ivol": -0.006521223260471784,
       "rank": 25.0,
       "percentile": 52.0
     },
     {
-      "symbol": "PG",
-      "composite_score": 0.09091964064124734,
-      "factor_momentum_6_1": -0.10909913986523818,
-      "factor_ivol": 0.12728306799348765,
+      "symbol": "V",
+      "composite_score": 0.13260983099406357,
+      "factor_momentum_6_1": -0.05075118147811534,
+      "factor_ivol": 0.07727314767692806,
       "rank": 26.0,
       "percentile": 50.0
     },
     {
-      "symbol": "CVX",
-      "composite_score": 0.07594629106743689,
-      "factor_momentum_6_1": -0.04388993418083416,
-      "factor_ivol": 0.059079192394321536,
+      "symbol": "PEP",
+      "composite_score": 0.08953865590111902,
+      "factor_momentum_6_1": -0.06816631682740043,
+      "factor_ivol": 0.08607404800762423,
       "rank": 27.0,
       "percentile": 48.0
     },
     {
-      "symbol": "GE",
-      "composite_score": 0.07227971609788691,
-      "factor_momentum_6_1": 0.021530225214725942,
-      "factor_ivol": -0.007074281995148559,
+      "symbol": "PG",
+      "composite_score": 0.04642362687227841,
+      "factor_momentum_6_1": -0.11798675532380826,
+      "factor_ivol": 0.12727148069826394,
       "rank": 28.0,
       "percentile": 46.0
     },
     {
-      "symbol": "V",
-      "composite_score": 0.050011900624802735,
-      "factor_momentum_6_1": -0.06731016946572188,
-      "factor_ivol": 0.07731254959068243,
+      "symbol": "MA",
+      "composite_score": 0.007111491020879504,
+      "factor_momentum_6_1": -0.07843363887420682,
+      "factor_ivol": 0.07985593707838272,
       "rank": 29.0,
       "percentile": 44.0
     },
     {
       "symbol": "AMGN",
-      "composite_score": 0.04974963693457464,
-      "factor_momentum_6_1": -0.01593872033810235,
-      "factor_ivol": 0.02588864772501728,
+      "composite_score": -0.028748283069388175,
+      "factor_momentum_6_1": -0.03134537445400588,
+      "factor_ivol": 0.025595717840128242,
       "rank": 30.0,
       "percentile": 42.0
     },
     {
-      "symbol": "MA",
-      "composite_score": -0.020531732993716925,
-      "factor_momentum_6_1": -0.08349423916317807,
-      "factor_ivol": 0.07938789256443468,
+      "symbol": "PFE",
+      "composite_score": -0.06838098204259561,
+      "factor_momentum_6_1": -0.06117411074118221,
+      "factor_ivol": 0.04749791433266309,
       "rank": 31.0,
       "percentile": 40.0
     },
     {
       "symbol": "MMM",
-      "composite_score": -0.05598383051071029,
-      "factor_momentum_6_1": -0.014493579055405884,
-      "factor_ivol": 0.003296812953263826,
+      "composite_score": -0.09696223395266337,
+      "factor_momentum_6_1": -0.022869444344863377,
+      "factor_ivol": 0.0034769975543307015,
       "rank": 32.0,
       "percentile": 38.0
     },
     {
       "symbol": "ABT",
-      "composite_score": -0.12969181132168806,
-      "factor_momentum_6_1": -0.10127101600659544,
-      "factor_ivol": 0.07533265374225782,
+      "composite_score": -0.11369625122168159,
+      "factor_momentum_6_1": -0.09857463411391404,
+      "factor_ivol": 0.07583538386957772,
       "rank": 33.0,
       "percentile": 36.0
     },
     {
       "symbol": "COST",
-      "composite_score": -0.23899360458499114,
-      "factor_momentum_6_1": -0.140060714347971,
-      "factor_ivol": 0.09226199343097276,
+      "composite_score": -0.15330638231265153,
+      "factor_momentum_6_1": -0.12379314770834154,
+      "factor_ivol": 0.09313187124581124,
       "rank": 34.0,
       "percentile": 34.0
     },
     {
-      "symbol": "HD",
-      "composite_score": -0.24513453266203958,
-      "factor_momentum_6_1": -0.12592282383602557,
-      "factor_ivol": 0.07689591730361765,
+      "symbol": "BLK",
+      "composite_score": -0.2093648651561808,
+      "factor_momentum_6_1": -0.07070425595641558,
+      "factor_ivol": 0.02883128292517942,
       "rank": 35.0,
       "percentile": 32.0
     },
     {
-      "symbol": "UNH",
-      "composite_score": -0.2559896417011066,
-      "factor_momentum_6_1": 0.1723166298110342,
-      "factor_ivol": -0.22351455815125554,
+      "symbol": "HON",
+      "composite_score": -0.21691402605175256,
+      "factor_momentum_6_1": -0.09612476919252999,
+      "factor_ivol": 0.05274196398217948,
       "rank": 36.0,
       "percentile": 30.0
     },
     {
-      "symbol": "HON",
-      "composite_score": -0.267560165694134,
-      "factor_momentum_6_1": -0.10621667246165883,
-      "factor_ivol": 0.05270463932283203,
+      "symbol": "HD",
+      "composite_score": -0.3086941604522792,
+      "factor_momentum_6_1": -0.1390492829792944,
+      "factor_ivol": 0.07731045088883855,
       "rank": 37.0,
       "percentile": 28.000000000000004
     },
     {
-      "symbol": "BLK",
-      "composite_score": -0.2795622422126995,
-      "factor_momentum_6_1": -0.0883215949590956,
-      "factor_ivol": 0.032409146516555694,
+      "symbol": "AMZN",
+      "composite_score": -0.3697175746098848,
+      "factor_momentum_6_1": -0.028257850511319207,
+      "factor_ivol": -0.04568566441065776,
       "rank": 38.0,
       "percentile": 26.0
     },
     {
-      "symbol": "AMZN",
-      "composite_score": -0.40490850068644374,
-      "factor_momentum_6_1": -0.03495014984850513,
-      "factor_ivol": -0.04603155028878363,
+      "symbol": "UNH",
+      "composite_score": -0.3978910133905623,
+      "factor_momentum_6_1": 0.1439177031614647,
+      "factor_ivol": -0.22349590583957718,
       "rank": 39.0,
       "percentile": 24.0
     },
     {
       "symbol": "MSFT",
-      "composite_score": -0.4571333709054176,
-      "factor_momentum_6_1": -0.14586369927445247,
-      "factor_ivol": 0.05443702509336895,
+      "composite_score": -0.44325686152949084,
+      "factor_momentum_6_1": -0.1417410863367769,
+      "factor_ivol": 0.05308971403087873,
       "rank": 40.0,
       "percentile": 22.0
     },
     {
-      "symbol": "ADBE",
-      "composite_score": -0.48600380902650137,
-      "factor_momentum_6_1": -0.08708501734743626,
-      "factor_ivol": -0.010115744457864019,
+      "symbol": "CRM",
+      "composite_score": -0.471378551035929,
+      "factor_momentum_6_1": -0.05877878959933067,
+      "factor_ivol": -0.035496920607855136,
       "rank": 41.0,
       "percentile": 20.0
     },
     {
-      "symbol": "CRM",
-      "composite_score": -0.505258803991068,
-      "factor_momentum_6_1": -0.07208068537266404,
-      "factor_ivol": -0.028971075425549588,
+      "symbol": "ADBE",
+      "composite_score": -0.5649958605789771,
+      "factor_momentum_6_1": -0.09445307946012386,
+      "factor_ivol": -0.01854609265567158,
       "rank": 42.0,
       "percentile": 18.0
     },
     {
       "symbol": "TGT",
-      "composite_score": -0.5109057852429801,
-      "factor_momentum_6_1": -0.05855980448366256,
-      "factor_ivol": -0.04362135256493348,
+      "composite_score": -0.5670559040287441,
+      "factor_momentum_6_1": -0.06983210469614369,
+      "factor_ivol": -0.043579076109605146,
       "rank": 43.0,
       "percentile": 16.0
     },
     {
-      "symbol": "BA",
-      "composite_score": -0.704594868333166,
-      "factor_momentum_6_1": -0.06250552782152945,
-      "factor_ivol": -0.07841344584510375,
+      "symbol": "SBUX",
+      "composite_score": -0.661394310490212,
+      "factor_momentum_6_1": -0.09792387105289563,
+      "factor_ivol": -0.03435499104514679,
       "rank": 44.0,
       "percentile": 14.000000000000002
     },
     {
-      "symbol": "SBUX",
-      "composite_score": -0.7175957564877733,
-      "factor_momentum_6_1": -0.10838799487133953,
-      "factor_ivol": -0.03513115642621513,
+      "symbol": "TSLA",
+      "composite_score": -0.7198630894291247,
+      "factor_momentum_6_1": 0.19293733543752356,
+      "factor_ivol": -0.3369099533233485,
       "rank": 45.0,
       "percentile": 12.0
     },
     {
-      "symbol": "TSLA",
-      "composite_score": -0.8192980632690497,
-      "factor_momentum_6_1": 0.17369730413958503,
-      "factor_ivol": -0.337556916793395,
+      "symbol": "BA",
+      "composite_score": -0.7571335891085436,
+      "factor_momentum_6_1": -0.07324255385628896,
+      "factor_ivol": -0.07818416396541976,
       "rank": 46.0,
       "percentile": 10.0
     },
     {
       "symbol": "NVDA",
-      "composite_score": -0.9750423266826548,
-      "factor_momentum_6_1": -0.047527977510108156,
-      "factor_ivol": -0.1474804878264228,
+      "composite_score": -0.9860437907086447,
+      "factor_momentum_6_1": -0.048975697169525656,
+      "factor_ivol": -0.1482330609722033,
       "rank": 47.0,
       "percentile": 8.0
     },
     {
       "symbol": "AMD",
-      "composite_score": -1.2443777710625807,
-      "factor_momentum_6_1": 0.08189005480589068,
-      "factor_ivol": -0.33076560901840685,
+      "composite_score": -1.2616039601796272,
+      "factor_momentum_6_1": 0.07736926906264147,
+      "factor_ivol": -0.3296900610985669,
       "rank": 48.0,
       "percentile": 6.0
     },
     {
       "symbol": "META",
-      "composite_score": -1.3328159805143314,
-      "factor_momentum_6_1": -0.1693098639689399,
-      "factor_ivol": -0.09725333213392637,
+      "composite_score": -1.280558632803409,
+      "factor_momentum_6_1": -0.1585624514476781,
+      "factor_ivol": -0.0975492751130037,
       "rank": 49.0,
       "percentile": 4.0
     },
     {
       "symbol": "NKE",
-      "composite_score": -1.4433323725454805,
-      "factor_momentum_6_1": -0.1642161735879961,
-      "factor_ivol": -0.12445030092110002,
+      "composite_score": -1.396370644207985,
+      "factor_momentum_6_1": -0.1544880123617742,
+      "factor_ivol": -0.12478611647982281,
       "rank": 50.0,
       "percentile": 2.0
     }
@@ -1515,229 +1545,217 @@
       "symbol": "GOOGL",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.6087311799155466,
-      "trend_confidence": 0.6806885446722071,
-      "momentum_score": 0.7768576415557285,
-      "rsi": 76.52357915067805,
-      "composite_score": 1.1080896913360867,
+      "trend_strength": 0.6094641114322237,
+      "trend_confidence": 0.7065084872567355,
+      "momentum_score": 0.6776646515133826,
+      "rsi": 63.82497646072257,
+      "composite_score": 1.1493950253214575,
       "percentile": 100.0,
-      "combined_score": 0.7933624105969554
-    },
-    {
-      "symbol": "JNJ",
-      "trend_direction": "UP",
-      "trend_value": 1,
-      "trend_strength": 0.4938860841999335,
-      "trend_confidence": 0.8953949286564142,
-      "momentum_score": 0.7153541589822849,
-      "rsi": 88.51850680230127,
-      "composite_score": 0.9237714499673034,
-      "percentile": 98.0,
-      "combined_score": 0.711438923843085
+      "combined_score": 0.75390509403502
     },
     {
       "symbol": "CAT",
       "trend_direction": "STRONG_UP",
       "trend_value": 2,
-      "trend_strength": 0.6482036395364064,
-      "trend_confidence": 0.8001961929511714,
-      "momentum_score": 0.7874451108733063,
-      "rsi": 75.93977915335225,
-      "composite_score": 0.6678100465661525,
-      "percentile": 94.0,
-      "combined_score": 0.7097821501800902
+      "trend_strength": 0.673729067971391,
+      "trend_confidence": 0.8600566028762018,
+      "momentum_score": 0.7823487764045526,
+      "rsi": 78.84196579272182,
+      "composite_score": 0.7434546458989123,
+      "percentile": 96.0,
+      "combined_score": 0.738094624722912
     },
     {
-      "symbol": "LMT",
+      "symbol": "JNJ",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.651647277275562,
-      "trend_confidence": 0.9038921469932306,
-      "momentum_score": 0.8057991000736768,
-      "rsi": 85.52154507557208,
-      "composite_score": 0.41560207981901426,
-      "percentile": 82.0,
-      "combined_score": 0.6424944471578437
+      "trend_strength": 0.5051982298059267,
+      "trend_confidence": 0.9542686796009467,
+      "momentum_score": 0.7217636311050497,
+      "rsi": 90.46255385493599,
+      "composite_score": 0.845859143408952,
+      "percentile": 98.0,
+      "combined_score": 0.6940226644064835
     },
     {
       "symbol": "XOM",
       "trend_direction": "STRONG_UP",
       "trend_value": 2,
-      "trend_strength": 0.8082784273589199,
-      "trend_confidence": 0.9254935226889864,
-      "momentum_score": 0.5678354845023424,
-      "rsi": 68.30683636514327,
-      "composite_score": 0.447810898654699,
-      "percentile": 86.0,
-      "combined_score": 0.6039609916050226
-    },
-    {
-      "symbol": "WMT",
-      "trend_direction": "UP",
-      "trend_value": 1,
-      "trend_strength": 0.521967260880785,
-      "trend_confidence": 0.7878553087069273,
-      "momentum_score": 0.596622096189684,
-      "rsi": 80.43059949552917,
-      "composite_score": 0.29940813189632404,
-      "percentile": 62.0,
-      "combined_score": 0.4850614563090063
+      "trend_strength": 0.8301510489209056,
+      "trend_confidence": 0.9905053896909353,
+      "momentum_score": 0.6784612565073834,
+      "rsi": 78.61310485495588,
+      "composite_score": 0.49171381963131017,
+      "percentile": 84.0,
+      "combined_score": 0.667943963168618
     },
     {
       "symbol": "MRK",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.48674675895370845,
-      "trend_confidence": 0.6580048344531898,
-      "momentum_score": 0.314470737762106,
-      "rsi": 71.37884570727503,
-      "composite_score": 0.6925639476381265,
-      "percentile": 96.0,
-      "combined_score": 0.47958150708239283
+      "trend_strength": 0.5129573194076935,
+      "trend_confidence": 0.7430652144466456,
+      "momentum_score": 0.71697478386628,
+      "rsi": 77.14453387676721,
+      "composite_score": 0.7191325390680906,
+      "percentile": 94.0,
+      "combined_score": 0.6564168710892473
+    },
+    {
+      "symbol": "LMT",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.6705024745878797,
+      "trend_confidence": 0.8933979417114806,
+      "momentum_score": 0.7456556698221304,
+      "rsi": 76.05521122100534,
+      "composite_score": 0.44871698632746954,
+      "percentile": 80.0,
+      "combined_score": 0.634028106203457
     },
     {
       "symbol": "BAC",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.5705707905871137,
-      "trend_confidence": 0.4357854728601471,
-      "momentum_score": 0.36564213175543103,
-      "rsi": 62.16737148904545,
-      "composite_score": 0.5062791979137632,
-      "percentile": 90.0,
-      "combined_score": 0.46931184925243546
+      "trend_strength": 0.5554169955350821,
+      "trend_confidence": 0.4613092791331568,
+      "momentum_score": 0.47130899042493773,
+      "rsi": 66.04821810884715,
+      "composite_score": 0.5602775901070556,
+      "percentile": 88.0,
+      "combined_score": 0.5232319718626164
     },
     {
-      "symbol": "KO",
-      "trend_direction": "UP",
-      "trend_value": 1,
-      "trend_strength": 0.30173453215361884,
-      "trend_confidence": 0.8125230516119224,
-      "momentum_score": 0.4745763880781869,
-      "rsi": 80.4485625621457,
-      "composite_score": 0.34791004198109754,
-      "percentile": 70.0,
-      "combined_score": 0.38472392747168965
-    },
-    {
-      "symbol": "PFE",
+      "symbol": "WMT",
       "trend_direction": "STRONG_UP",
       "trend_value": 2,
-      "trend_strength": 0.49177442033147256,
-      "trend_confidence": 0.8857142148738448,
-      "momentum_score": 0.49466632194037374,
-      "rsi": 71.8116247797973,
-      "composite_score": 0.1275357496427281,
-      "percentile": 52.0,
-      "combined_score": 0.3836595797684097
+      "trend_strength": 0.5486787445058791,
+      "trend_confidence": 0.8526859184438067,
+      "momentum_score": 0.6425461431256668,
+      "rsi": 85.89176146373089,
+      "composite_score": 0.272886905116074,
+      "percentile": 66.0,
+      "combined_score": 0.5034881521368526
     },
     {
       "symbol": "UPS",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.6111254183030109,
-      "trend_confidence": 0.6630229658638584,
-      "momentum_score": 0.17824984484856254,
-      "rsi": 66.21970373734875,
-      "composite_score": 0.3554790277107073,
-      "percentile": 74.0,
-      "combined_score": 0.36128127174354047
-    },
-    {
-      "symbol": "PEP",
-      "trend_direction": "UP",
-      "trend_value": 1,
-      "trend_strength": 0.32443958044192917,
-      "trend_confidence": 0.6820037000116024,
-      "momentum_score": 0.4974548394881607,
-      "rsi": 83.07088907823999,
-      "composite_score": 0.16336934154445484,
-      "percentile": 54.0,
-      "combined_score": 0.3453246123911795
+      "trend_strength": 0.6309814790222356,
+      "trend_confidence": 0.7303302485999505,
+      "momentum_score": 0.345255687811772,
+      "rsi": 70.53694918682072,
+      "composite_score": 0.2826079992317501,
+      "percentile": 68.0,
+      "combined_score": 0.4121791186009045
     },
     {
       "symbol": "CVX",
-      "trend_direction": "UP",
-      "trend_value": 1,
-      "trend_strength": 0.436567247685385,
-      "trend_confidence": 0.9145704427902344,
-      "momentum_score": 0.46668826063334745,
-      "rsi": 72.07612283312177,
-      "composite_score": 0.07594629106743689,
-      "percentile": 48.0,
-      "combined_score": 0.3404293658791856
-    },
-    {
-      "symbol": "MS",
-      "trend_direction": "UP",
-      "trend_value": 1,
-      "trend_strength": 0.46561908080944603,
-      "trend_confidence": 0.5814990641795545,
-      "momentum_score": 0.10342214685939144,
-      "rsi": 60.41971039786487,
-      "composite_score": 0.4863527702175178,
-      "percentile": 88.0,
-      "combined_score": 0.3269604140518457
+      "trend_direction": "STRONG_UP",
+      "trend_value": 2,
+      "trend_strength": 0.4614683159748774,
+      "trend_confidence": 0.9540735620069192,
+      "momentum_score": 0.5393726659820449,
+      "rsi": 78.66074580997636,
+      "composite_score": 0.17054833743684966,
+      "percentile": 56.00000000000001,
+      "combined_score": 0.4053540624163361
     },
     {
       "symbol": "C",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.5574030540442937,
-      "trend_confidence": 0.6659367919559647,
-      "momentum_score": 0.04845223457210702,
-      "rsi": 53.5806937913982,
-      "composite_score": 0.44574608066203925,
-      "percentile": 84.0,
-      "combined_score": 0.3203256342407427
+      "trend_strength": 0.5327333093057955,
+      "trend_confidence": 0.6191395740363188,
+      "momentum_score": 0.1441449758369403,
+      "rsi": 62.42508720765645,
+      "composite_score": 0.585164368244591,
+      "percentile": 92.0,
+      "combined_score": 0.3930272935998921
+    },
+    {
+      "symbol": "JPM",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.46424122742033025,
+      "trend_confidence": 0.5404376606309658,
+      "momentum_score": 0.38586540894852545,
+      "rsi": 64.43302346286072,
+      "composite_score": 0.30830951081451063,
+      "percentile": 72.0,
+      "combined_score": 0.3861113850498624
+    },
+    {
+      "symbol": "KO",
+      "trend_direction": "STRONG_UP",
+      "trend_value": 2,
+      "trend_strength": 0.3235648360906462,
+      "trend_confidence": 0.8844614125290648,
+      "momentum_score": 0.5059788243279942,
+      "rsi": 85.69941341246577,
+      "composite_score": 0.26912469866070776,
+      "percentile": 64.0,
+      "combined_score": 0.38019839015660384
+    },
+    {
+      "symbol": "PEP",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.36213411981685084,
+      "trend_confidence": 0.7051694030388183,
+      "momentum_score": 0.5838287972872439,
+      "rsi": 90.14991115275485,
+      "composite_score": 0.08953865590111902,
+      "percentile": 48.0,
+      "combined_score": 0.36903335163028855
+    },
+    {
+      "symbol": "MS",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.4715387114737255,
+      "trend_confidence": 0.6146444951591652,
+      "momentum_score": 0.04061694228333864,
+      "rsi": 51.72192356412603,
+      "composite_score": 0.5734478987633055,
+      "percentile": 90.0,
+      "combined_score": 0.3297427599844447
     },
     {
       "symbol": "MCD",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.1998936741029193,
-      "trend_confidence": 0.5830573016646374,
-      "momentum_score": 0.41180618531696905,
-      "rsi": 73.65130291374066,
-      "composite_score": 0.2953405087537277,
-      "percentile": 60.0,
-      "combined_score": 0.31329272898378174
-    },
-    {
-      "symbol": "BMY",
-      "trend_direction": "UP",
-      "trend_value": 1,
-      "trend_strength": 0.5853952982629991,
-      "trend_confidence": 0.5944046169162212,
-      "momentum_score": 0.08205932953194776,
-      "rsi": 60.57077133010777,
-      "composite_score": 0.3181057006798009,
-      "percentile": 66.0,
-      "combined_score": 0.3038740314956191
-    },
-    {
-      "symbol": "AMGN",
-      "trend_direction": "UP",
-      "trend_value": 1,
-      "trend_strength": 0.4074891370747115,
-      "trend_confidence": 0.5385210929781766,
-      "momentum_score": 0.41156717446600005,
-      "rsi": 59.09593889213389,
-      "composite_score": 0.04974963693457464,
-      "percentile": 42.0,
-      "combined_score": 0.30179850198918584
+      "trend_strength": 0.21756153620523566,
+      "trend_confidence": 0.6403450043933464,
+      "momentum_score": 0.41250547004513993,
+      "rsi": 75.30176543394508,
+      "composite_score": 0.2948301829415096,
+      "percentile": 70.0,
+      "combined_score": 0.31871970376207953
     },
     {
       "symbol": "GS",
       "trend_direction": "UP",
       "trend_value": 1,
-      "trend_strength": 0.47517875726007475,
-      "trend_confidence": 0.5208130836547087,
-      "momentum_score": 0.0649600590114659,
-      "rsi": 56.117206896168796,
-      "composite_score": 0.3835730817783632,
-      "percentile": 78.0,
-      "combined_score": 0.28360957531611775
+      "trend_strength": 0.4739152562854595,
+      "trend_confidence": 0.5562871399013771,
+      "momentum_score": 0.027648866630776828,
+      "rsi": 50.77747028166319,
+      "composite_score": 0.517611449493196,
+      "percentile": 86.0,
+      "combined_score": 0.3085175583859074
+    },
+    {
+      "symbol": "BMY",
+      "trend_direction": "UP",
+      "trend_value": 1,
+      "trend_strength": 0.6017731666121622,
+      "trend_confidence": 0.6521140133659082,
+      "momentum_score": 0.08007948530745626,
+      "rsi": 61.48954902138413,
+      "composite_score": 0.227461625263568,
+      "percentile": 62.0,
+      "combined_score": 0.28080223168570156
     }
   ]
 }
