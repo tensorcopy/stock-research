@@ -148,6 +148,7 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "📊 Market analysis - ${{ steps.analysis.outputs.date }}"
+            git pull --rebase
             git push
           fi
 
