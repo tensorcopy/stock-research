@@ -50,10 +50,13 @@ class SentimentAnalyzer:
         try:
             import yfinance as yf
             ticker = yf.Ticker(symbol)
+            days = days or self.config.lookback_days
             news = ticker.news
 
             if not news:
                 return {"sentiment_score": 0, "news_count": 0, "articles": []}
+
+            cutoff = datetime.now() - timedelta(days=days)
 
             # Simple sentiment based on title keywords
             positive_words = {
@@ -70,7 +73,18 @@ class SentimentAnalyzer:
             sentiment_scores = []
             articles = []
 
-            for article in news[:20]:  # Limit to recent 20 articles
+            filtered = []
+            for article in news:
+                publish_time = article.get("providerPublishTime")
+                if publish_time is None:
+                    filtered.append(article)
+                    continue
+
+                published_at = datetime.fromtimestamp(publish_time)
+                if published_at >= cutoff:
+                    filtered.append(article)
+
+            for article in filtered[:20]:  # Limit to recent 20 articles
                 title = article.get("title", "").lower()
 
                 pos_count = sum(1 for word in positive_words if word in title)
@@ -93,7 +107,7 @@ class SentimentAnalyzer:
 
             return {
                 "sentiment_score": avg_sentiment,
-                "news_count": len(news),
+                "news_count": len(filtered),
                 "positive_ratio": sum(1 for s in sentiment_scores if s > 0) / len(sentiment_scores) if sentiment_scores else 0,
                 "articles": articles
             }

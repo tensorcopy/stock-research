@@ -93,7 +93,8 @@ class Portfolio:
         self,
         symbol: str,
         quantity: float,
-        date: Optional[datetime] = None
+        date: Optional[datetime] = None,
+        price: Optional[float] = None
     ):
         """Remove from position (sell)"""
         date = date or datetime.now()
@@ -119,7 +120,7 @@ class Portfolio:
             "symbol": symbol,
             "action": "sell",
             "quantity": quantity,
-            "price": None  # Will be filled by caller
+            "price": price
         })
 
     def calculate_value(self, prices: dict[str, float]) -> float:

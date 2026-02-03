@@ -24,7 +24,8 @@ class TestMomentumSignals:
         dates = pd.date_range(start="2023-01-01", periods=300, freq="D")
         # Uptrending prices with some noise
         base = 100 * (1.001 ** np.arange(300))
-        noise = np.random.randn(300) * 2
+        rng = np.random.default_rng(0)
+        noise = rng.standard_normal(300) * 2
         prices = pd.Series(base + noise, index=dates)
         return prices
 
@@ -32,10 +33,11 @@ class TestMomentumSignals:
     def sample_ohlcv(self, sample_prices):
         """Generate sample OHLCV data"""
         close = sample_prices
-        high = close * (1 + np.abs(np.random.randn(len(close)) * 0.01))
-        low = close * (1 - np.abs(np.random.randn(len(close)) * 0.01))
+        rng = np.random.default_rng(1)
+        high = close * (1 + np.abs(rng.standard_normal(len(close)) * 0.01))
+        low = close * (1 - np.abs(rng.standard_normal(len(close)) * 0.01))
         open_prices = close.shift(1).fillna(close.iloc[0])
-        volume = pd.Series(np.random.randint(1000000, 5000000, len(close)), index=close.index)
+        volume = pd.Series(rng.integers(1_000_000, 5_000_000, len(close)), index=close.index)
 
         return pd.DataFrame({
             "open": open_prices,

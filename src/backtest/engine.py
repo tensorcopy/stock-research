@@ -35,14 +35,14 @@ class Trade:
     quantity: float
     price: float
     commission: float
-    slippage: float
+    slippage: float  # absolute slippage cost
 
     @property
     def total_cost(self) -> float:
         if self.side == "buy":
-            return self.quantity * self.price * (1 + self.slippage) + self.commission
+            return self.quantity * self.price + self.slippage + self.commission
         else:
-            return self.quantity * self.price * (1 - self.slippage) - self.commission
+            return self.quantity * self.price - self.slippage - self.commission
 
 
 @dataclass
@@ -86,6 +86,7 @@ class BacktestEngine:
         Args:
             price_data: Dict mapping symbols to OHLCV DataFrames
             signal_generator: Function(date, prices) -> {symbol: signal_strength}
+                prices is sliced to data available up to and including date.
             start_date: Override config start date
             end_date: Override config end date
 
@@ -120,7 +121,11 @@ class BacktestEngine:
             # Rebalance if needed
             if date in rebalance_dates:
                 # Generate signals
-                signals = signal_generator(date, price_data)
+                historical_data = {
+                    symbol: df.loc[:date]
+                    for symbol, df in price_data.items()
+                }
+                signals = signal_generator(date, historical_data)
 
                 # Execute rebalancing
                 self._rebalance(date, signals, current_prices)
@@ -304,18 +309,20 @@ class BacktestEngine:
         quantity: float
     ):
         """Execute a buy order"""
-        slippage_cost = price * self.config.slippage
-        execution_price = price + slippage_cost
-        commission = execution_price * quantity * self.config.commission
-
-        total_cost = execution_price * quantity + commission
+        slippage_per_share = price * self.config.slippage
+        execution_price = price + slippage_per_share
+        commission_rate = self.config.commission
+        total_cost = execution_price * quantity * (1 + commission_rate)
 
         if total_cost > self.portfolio.cash:
             # Reduce quantity to fit available cash
-            quantity = (self.portfolio.cash - commission) / execution_price
+            quantity = self.portfolio.cash / (execution_price * (1 + commission_rate))
             if quantity <= 0:
                 return
-            total_cost = execution_price * quantity + commission
+            total_cost = execution_price * quantity * (1 + commission_rate)
+
+        slippage_cost = slippage_per_share * quantity
+        commission = execution_price * quantity * commission_rate
 
         # Record trade
         trade = Trade(
@@ -325,13 +332,13 @@ class BacktestEngine:
             quantity=quantity,
             price=price,
             commission=commission,
-            slippage=slippage_cost * quantity
+            slippage=slippage_cost
         )
         self.trades.append(trade)
 
         # Update portfolio
         self.portfolio.cash -= total_cost
-        self.portfolio.add_position(symbol, quantity, execution_price)
+        self.portfolio.add_position(symbol, quantity, execution_price, date=date)
 
     def _execute_sell(
         self,
@@ -341,10 +348,11 @@ class BacktestEngine:
         quantity: float
     ):
         """Execute a sell order"""
-        slippage_cost = price * self.config.slippage
-        execution_price = price - slippage_cost
-        commission = execution_price * quantity * self.config.commission
-
+        slippage_per_share = price * self.config.slippage
+        execution_price = price - slippage_per_share
+        commission_rate = self.config.commission
+        commission = execution_price * quantity * commission_rate
+        slippage_cost = slippage_per_share * quantity
         proceeds = execution_price * quantity - commission
 
         # Record trade
@@ -355,10 +363,10 @@ class BacktestEngine:
             quantity=quantity,
             price=price,
             commission=commission,
-            slippage=slippage_cost * quantity
+            slippage=slippage_cost
         )
         self.trades.append(trade)
 
         # Update portfolio
         self.portfolio.cash += proceeds
-        self.portfolio.remove_position(symbol, quantity)
+        self.portfolio.remove_position(symbol, quantity, date=date, price=execution_price)

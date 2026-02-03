@@ -112,10 +112,11 @@ class BreakoutDetector:
         2. Volume above average
         3. Close near the extreme (not just wick)
         """
-        if len(ohlcv) < lookback:
+        if len(ohlcv) <= lookback:
             return None
 
-        recent = ohlcv.tail(lookback)
+        # Exclude the current bar from the lookback range to avoid self-comparison.
+        recent = ohlcv.iloc[-(lookback + 1):-1]
         current = ohlcv.iloc[-1]
 
         lookback_high = recent["high"].max()
@@ -250,6 +251,9 @@ class BreakoutDetector:
         Squeeze occurs when Bollinger Bands are inside Keltner Channels
         Breakout from squeeze often leads to strong moves
         """
+        if len(ohlcv) < max(bb_period, kc_period) + 1:
+            return None
+
         close = ohlcv["close"]
         high = ohlcv["high"]
         low = ohlcv["low"]

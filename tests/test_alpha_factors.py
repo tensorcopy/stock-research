@@ -22,7 +22,8 @@ class TestAlphaFactors:
         """Generate 1 year of sample prices"""
         dates = pd.date_range(start="2023-01-01", periods=260, freq="D")
         # Random walk with slight upward drift
-        returns = np.random.randn(260) * 0.02 + 0.0003
+        rng = np.random.default_rng(0)
+        returns = rng.standard_normal(260) * 0.02 + 0.0003
         prices = 100 * (1 + returns).cumprod()
         return pd.Series(prices, index=dates)
 

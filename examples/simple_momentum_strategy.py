@@ -160,8 +160,8 @@ if __name__ == "__main__":
 
     # For demo without data:
     print("\nTo run the full strategy with live data:")
-    print("1. Install requirements: pip install -r requirements.txt")
+    print("1. Install requirements: uv sync")
     print("2. Uncomment the run_momentum_strategy() call")
-    print("3. Run: python examples/simple_momentum_strategy.py")
+    print("3. Run: uv run python examples/simple_momentum_strategy.py")
 
     analyze_factor_returns()
