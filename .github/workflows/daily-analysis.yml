@@ -18,9 +18,11 @@ concurrency:
   group: market-analysis
   cancel-in-progress: false
 
-# Required for creating releases
+# Required for creating releases and deploying Pages
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   analyze:
@@ -141,6 +143,20 @@ jobs:
             --notes-file results/SUMMARY.md \
             results/latest.json \
             results/alpha_rankings.csv
+
+      - name: Build dashboard
+        if: ${{ steps.trading-day.outputs.is_trading_day == 'true' }}
+        run: python build_site.py results/latest.json
+
+      - name: Upload Pages artifact
+        if: ${{ steps.trading-day.outputs.is_trading_day == 'true' }}
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        if: ${{ steps.trading-day.outputs.is_trading_day == 'true' }}
+        uses: actions/deploy-pages@v4
 
       # Optional: Send Slack notification
       - name: Send Slack notification

@@ -48,3 +48,6 @@ htmlcov/
 
 # Results (stored as GitHub Releases, not in repo)
 results/
+
+# Generated site
+_site/
