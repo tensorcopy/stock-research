@@ -18,7 +18,7 @@ concurrency:
   group: market-analysis
   cancel-in-progress: false
 
-# Required for pushing commits
+# Required for creating releases
 permissions:
   contents: write
 
@@ -128,29 +128,19 @@ jobs:
           print(summary)
           EOF
 
-      - name: Upload results as artifacts
+      - name: Create GitHub Release
         if: ${{ steps.trading-day.outputs.is_trading_day == 'true' }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: market-analysis-${{ steps.analysis.outputs.date }}
-          path: results/
-          retention-days: 90
-
-      - name: Commit results to repository
-        if: ${{ steps.trading-day.outputs.is_trading_day == 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          DATE="${{ steps.analysis.outputs.date }}"
+          TAG="analysis-${DATE}"
 
-          git add results/
-
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "📊 Market analysis - ${{ steps.analysis.outputs.date }}"
-            git pull --rebase
-            git push
-          fi
+          gh release create "$TAG" \
+            --title "📊 Market Analysis - ${DATE}" \
+            --notes-file results/SUMMARY.md \
+            results/latest.json \
+            results/alpha_rankings.csv
 
       # Optional: Send Slack notification
       - name: Send Slack notification
@@ -217,7 +207,7 @@ jobs:
           echo "${{ steps.summary.outputs.summary }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "---" >> $GITHUB_STEP_SUMMARY
-          echo "📁 **Results:** [results/SUMMARY.md](../blob/main/results/SUMMARY.md)" >> $GITHUB_STEP_SUMMARY
+          echo "📁 **Results:** [View Release](../releases/tag/analysis-${{ steps.analysis.outputs.date }})" >> $GITHUB_STEP_SUMMARY
 
       - name: Create summary (skipped)
         if: ${{ steps.trading-day.outputs.is_trading_day != 'true' }}
