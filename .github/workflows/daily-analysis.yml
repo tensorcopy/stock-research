@@ -18,9 +18,11 @@ concurrency:
   group: market-analysis
   cancel-in-progress: false
 
-# Required for pushing commits
+# Required for creating releases and deploying Pages
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   analyze:
@@ -128,29 +130,33 @@ jobs:
           print(summary)
           EOF
 
-      - name: Upload results as artifacts
+      - name: Create GitHub Release
         if: ${{ steps.trading-day.outputs.is_trading_day == 'true' }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: market-analysis-${{ steps.analysis.outputs.date }}
-          path: results/
-          retention-days: 90
-
-      - name: Commit results to repository
-        if: ${{ steps.trading-day.outputs.is_trading_day == 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          DATE="${{ steps.analysis.outputs.date }}"
+          TAG="analysis-${DATE}"
 
-          git add results/
+          gh release create "$TAG" \
+            --title "📊 Market Analysis - ${DATE}" \
+            --notes-file results/SUMMARY.md \
+            results/latest.json \
+            results/alpha_rankings.csv
 
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "📊 Market analysis - ${{ steps.analysis.outputs.date }}"
-            git pull --rebase
-            git push
-          fi
+      - name: Build dashboard
+        if: ${{ steps.trading-day.outputs.is_trading_day == 'true' }}
+        run: python build_site.py results/latest.json
+
+      - name: Upload Pages artifact
+        if: ${{ steps.trading-day.outputs.is_trading_day == 'true' }}
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        if: ${{ steps.trading-day.outputs.is_trading_day == 'true' }}
+        uses: actions/deploy-pages@v4
 
       # Optional: Send Slack notification
       - name: Send Slack notification
@@ -217,7 +223,7 @@ jobs:
           echo "${{ steps.summary.outputs.summary }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "---" >> $GITHUB_STEP_SUMMARY
-          echo "📁 **Results:** [results/SUMMARY.md](../blob/main/results/SUMMARY.md)" >> $GITHUB_STEP_SUMMARY
+          echo "📁 **Results:** [View Release](../releases/tag/analysis-${{ steps.analysis.outputs.date }})" >> $GITHUB_STEP_SUMMARY
 
       - name: Create summary (skipped)
         if: ${{ steps.trading-day.outputs.is_trading_day != 'true' }}

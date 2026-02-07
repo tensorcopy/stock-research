@@ -46,6 +46,8 @@ cache/
 .pytest_cache/
 htmlcov/
 
-# Results (keep structure but ignore data files)
-# results/*.json
-# results/*.csv
+# Results (stored as GitHub Releases, not in repo)
+results/
+
+# Generated site
+_site/
