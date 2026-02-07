@@ -92,6 +92,9 @@ class FundamentalsFetcher:
 
                 metrics = {
                     "symbol": symbol,
+                    # Classification
+                    "sector": info.get("sector", "Unknown"),
+                    "industry": info.get("industry", "Unknown"),
                     # Valuation
                     "pe_ratio": info.get("trailingPE"),
                     "forward_pe": info.get("forwardPE"),
